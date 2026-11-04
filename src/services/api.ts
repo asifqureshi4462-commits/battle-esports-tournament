@@ -26,6 +26,19 @@ export function setStoredToken(token: string | null) {
   }
 }
 
+const API_BASE_URL = (() => {
+  if (typeof window !== 'undefined') {
+    const isCapacitor = 
+      window.location.protocol === 'capacitor:' || 
+      window.location.protocol === 'file:' || 
+      (window.location.hostname === 'localhost' && window.location.port !== '3000');
+    if (isCapacitor) {
+      return 'https://ais-dev-4heebrrpbklgtchjhefzbs-703329501501.asia-southeast1.run.app';
+    }
+  }
+  return '';
+})();
+
 async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = getStoredToken();
   const headers: Record<string, string> = {
@@ -37,14 +50,24 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
     headers['Authorization'] = `Bearer ${token}`;
   }
 
-  const res = await fetch(endpoint, {
-    ...options,
-    headers,
-  });
+  const fullUrl = endpoint.startsWith('http') ? endpoint : `${API_BASE_URL}${endpoint}`;
+  console.log(`[API Request] ${options.method || 'GET'} ${fullUrl}`);
+
+  let res: Response;
+  try {
+    res = await fetch(fullUrl, {
+      ...options,
+      headers,
+    });
+  } catch (netErr: any) {
+    console.error(`[API Network Error] ${fullUrl}:`, netErr);
+    throw new Error('Network connection error. Please check your internet connection or server status.');
+  }
 
   const data = await res.json().catch(() => ({}));
 
   if (!res.ok) {
+    console.warn(`[API Error Response] ${res.status} ${fullUrl}:`, data);
     const err: any = new Error(data.error || `Request failed with status ${res.status}`);
     err.status = res.status;
     err.code = data.code;
