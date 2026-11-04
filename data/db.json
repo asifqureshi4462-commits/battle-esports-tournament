@@ -1,0 +1,1923 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_001",
+      "username": "BattleAdmin",
+      "email": "admin@battleesports.com",
+      "phone": "+91 99999 88888",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=150&auto=format&fit=crop&q=80",
+      "walletBalancePaise": 500000,
+      "coins": 2500,
+      "createdAt": "2026-09-26T08:30:00.045Z",
+      "passwordHash": "cd848a4494d7bea0385f7a3a1d72229818ed47ac3e019d2dc3c328fad7187998",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_player_001",
+      "username": "RahulPro",
+      "email": "rahul@gamer.com",
+      "phone": "+91 98765 11111",
+      "role": "user",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "bgmiIgn": "TX・RAHUL⚡",
+      "bgmiUid": "5129482103",
+      "freeFireIgn": "RAHUL_FF_BOSS",
+      "freeFireUid": "884920192",
+      "upiId": "rahul@oksbi",
+      "walletBalancePaise": 7500,
+      "coins": 850,
+      "createdAt": "2026-10-11T08:30:00.045Z",
+      "passwordHash": "eed5798589ac20d1d53ea9c560e257134bd37cfb64e2c3658fc134518fa4cb50",
+      "accountStatus": "ACTIVE",
+      "isBanned": false,
+      "banType": "PERMANENT",
+      "banReason": "Repeated severe fair play violations",
+      "banExpiresAt": null,
+      "bannedAt": "2026-10-28T14:21:42.641Z",
+      "bannedBy": "usr_admin_001",
+      "bannedByName": "BattleAdmin",
+      "unbannedAt": "2026-10-28T14:21:42.645Z",
+      "unbannedBy": "usr_admin_001",
+      "notificationSettings": {
+        "pushEnabled": true,
+        "notifyRoomDetails": true,
+        "notifyWithdrawalUpdates": true,
+        "notifyTournamentStart": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      },
+      "pushSubscriptions": [
+        {
+          "endpoint": "https://fcm.googleapis.com/fcm/send/test_device_token_1793617536281",
+          "keys": {
+            "p256dh": "test_p256dh_key",
+            "auth": "test_auth_key"
+          },
+          "deviceInfo": "OnePlus 11 (Android 14 Chrome)",
+          "createdAt": "2026-11-02T11:05:36.283Z"
+        },
+        {
+          "endpoint": "https://fcm.googleapis.com/fcm/send/test_device_token_1793617551626",
+          "keys": {
+            "p256dh": "test_p256dh_key",
+            "auth": "test_auth_key"
+          },
+          "deviceInfo": "OnePlus 11 (Android 14 Chrome)",
+          "createdAt": "2026-11-02T11:05:51.628Z"
+        }
+      ]
+    },
+    {
+      "id": "usr_player_002",
+      "username": "VickySniper",
+      "email": "vicky@gamer.com",
+      "phone": "+91 98765 22222",
+      "role": "user",
+      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&auto=format&fit=crop&q=80",
+      "bgmiIgn": "GOD・VICKY父",
+      "bgmiUid": "5192849201",
+      "upiId": "vicky@paytm",
+      "walletBalancePaise": 12000,
+      "coins": 300,
+      "createdAt": "2026-10-16T08:30:00.045Z",
+      "passwordHash": "eed5798589ac20d1d53ea9c560e257134bd37cfb64e2c3658fc134518fa4cb50",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_player_003",
+      "username": "AnanyaSlayer",
+      "email": "ananya@gamer.com",
+      "phone": "+91 98765 33333",
+      "role": "user",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "freeFireIgn": "QUEEN・ANANYA",
+      "freeFireUid": "902819402",
+      "walletBalancePaise": 45000,
+      "coins": 1200,
+      "createdAt": "2026-10-21T08:30:00.045Z",
+      "passwordHash": "eed5798589ac20d1d53ea9c560e257134bd37cfb64e2c3658fc134518fa4cb50",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_678f87c7",
+      "username": "ApexGod_23769",
+      "email": "pro_gamer_13299@esports.in",
+      "phone": "+919876543210",
+      "role": "user",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexGod_23769",
+      "bgmiIgn": "TX・APEX",
+      "bgmiUid": "",
+      "freeFireIgn": "",
+      "freeFireUid": "",
+      "walletBalancePaise": 0,
+      "coins": 100,
+      "createdAt": "2026-10-26T16:35:44.675Z",
+      "passwordHash": "674fc2241882ad03c7750744b2cecb0e934dd123b8674beacdccdf85ae1163aa",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_1b20c2a6",
+      "username": "ApexGod_12677",
+      "email": "pro_gamer_25940@esports.in",
+      "phone": "+919876543210",
+      "role": "user",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=ApexGod_12677",
+      "bgmiIgn": "TX・APEX",
+      "bgmiUid": "",
+      "freeFireIgn": "",
+      "freeFireUid": "",
+      "walletBalancePaise": 20000,
+      "coins": 100,
+      "createdAt": "2026-10-26T16:36:25.425Z",
+      "passwordHash": "674fc2241882ad03c7750744b2cecb0e934dd123b8674beacdccdf85ae1163aa",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_1bcddff0",
+      "username": "PersistCheck",
+      "email": "gamer_persist_check@esports.in",
+      "phone": "",
+      "role": "user",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=PersistCheck",
+      "bgmiIgn": "",
+      "bgmiUid": "",
+      "freeFireIgn": "",
+      "freeFireUid": "",
+      "walletBalancePaise": 20000,
+      "coins": 100,
+      "createdAt": "2026-10-26T16:36:36.653Z",
+      "passwordHash": "674fc2241882ad03c7750744b2cecb0e934dd123b8674beacdccdf85ae1163aa",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_51895f85",
+      "username": "SniperElite_30674",
+      "email": "elite_champ_24983@esports.in",
+      "phone": "+919876543210",
+      "role": "user",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=SniperElite_30674",
+      "bgmiIgn": "TX・SNIPER",
+      "bgmiUid": "",
+      "freeFireIgn": "",
+      "freeFireUid": "",
+      "walletBalancePaise": 20000,
+      "coins": 100,
+      "createdAt": "2026-10-26T16:36:55.196Z",
+      "passwordHash": "c58f216c1d903e51b30cf48362bd3116f2c9ed5f664479d73e854ae4a97a4a14",
+      "accountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_fbba96d7",
+      "username": "KUMAR 123",
+      "email": "mahatmagandhi689@gmail.com",
+      "phone": "8260032657",
+      "role": "user",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=KUMAR%20123",
+      "bgmiIgn": "",
+      "bgmiUid": "",
+      "freeFireIgn": "",
+      "freeFireUid": "",
+      "walletBalancePaise": 0,
+      "coins": 100,
+      "createdAt": "2026-10-28T14:00:23.765Z",
+      "passwordHash": "e6956b0a02e71371b1b4fb10bc98face5909f7a59e669a6b37346e66b9158684",
+      "accountStatus": "ACTIVE"
+    }
+  ],
+  "sessions": {
+    "tok_7880b3c34f020a399e91eba82a259943673e1f2badb65efe": "usr_player_001",
+    "tok_ed0e21a6ffbb2bf7f5da2f978fdea69bed4d4d1d53aa79db": "usr_admin_001",
+    "tok_bdc368bfdd999396b34df7794a9af70c7515776189227ecb": "usr_player_001",
+    "tok_ad4204bf5e49e352e02b325427f530febb2da3df2234080c": "usr_admin_001",
+    "tok_7525285959a88aabf1cd6130e2e1205bf3188f34ab540b9b": "usr_player_001",
+    "tok_912fd723bad63c2708c14ab5ac22f3c611425057df2be8f1": "usr_admin_001",
+    "tok_4fe48f40b74366ef0ff03427a71d266771a6bdad923402da": "usr_admin_001",
+    "tok_d5193ac50c0f1030486941e438ab028c1a323ac555f63a6a": "usr_player_001",
+    "tok_253101bb35450b128873ddcdbcc7de553a79ae0d4ee34fe6": "usr_player_001",
+    "tok_562426b5668b9ea00762c86acdf8449f67d0f220d69deeb4": "usr_admin_001",
+    "tok_80ad70ac5e1472bafbad77a1a55f88c3d222faa3b564738c": "usr_player_001",
+    "tok_4a270196a54f42d050ba02ca20c2f9f25de8b3af48f4ab1c": "usr_admin_001",
+    "tok_2ec9118ff053ad87d94100f8ede268a50a3498130d3d551f": "usr_admin_001",
+    "tok_1b47098c8e05b57e88ec76374846f911da760146cf4c30a1": "usr_admin_001",
+    "tok_4335ab1a93e21746e6f16c470bdc1ce3edfe659b46f718cc": "usr_player_001",
+    "tok_269cda6e5c8bedf3d9194594a14428b5fbf987a8b1f289e6": "usr_678f87c7",
+    "tok_7d77474188ab4a1e1395313cd34cc1c1e318213e4992ecd0": "usr_1b20c2a6",
+    "tok_c59889531f8798b28859f6cd87f4256682190404772e85da": "usr_1bcddff0",
+    "tok_fa3c7d853c8409103f2d18daf5e6e568401783c75126894e": "usr_51895f85",
+    "tok_70ff3db32dfa7b6fc9da3737aa83a8145484d213413cc684": "usr_admin_001",
+    "tok_4c0d8654ec5b1e2b87d989ce3e1e68612cc6582517fee1ae": "usr_player_001",
+    "tok_ab6394f6dff5dffa373e7064b9f626e8879fbf3224e4f089": "usr_admin_001",
+    "tok_efeae41e178af5b40fbd9430114f58d57e548e028749d08a": "usr_player_001",
+    "tok_aa9ad262d6ef400b12bdda926d9e2789c6e0f58d72a29d35": "usr_player_001",
+    "tok_7188e5fb5d714552107b0d1bed792e094fe2975dd4a9df97": "usr_admin_001",
+    "tok_0f5999c2c17293df6b2e9c2f477917c22f04e6e973ebf781": "usr_player_001",
+    "tok_429a9a693c4d58e09dfeb10b8aedc66e0908ac6e620932cf": "usr_admin_001",
+    "tok_4c473d363945ff8d5d0c4ce1e7024a8b8113b4b808fbf38c": "usr_player_001",
+    "tok_8d24c89236dc7115345e267297aaa7d8924659a3ea8249e6": "usr_admin_001",
+    "tok_d8989bfdd38f4d654a63ca24b7a0d3c90de4bad3242ff615": "usr_player_001",
+    "tok_2d75002a3bc2484786fd0c8e1a97ac5c9e82e855d62499cf": "usr_player_001",
+    "tok_10f2033d4394739d156ada57e17dcb5e8e6d97cc734664aa": "usr_player_001",
+    "tok_4279fe95b4e5d11ec47c3c3af0a0a6d485ad2feedae2f8db": "usr_admin_001",
+    "tok_34ad76ecba42213f7b4ab923af39081dd9a93751caefddc9": "usr_admin_001",
+    "tok_6ea4f67365b945aa37ae7ee5eefd7b4a0c87e89b95fc743c": "usr_player_001",
+    "tok_c3495f6b836f1b8a3722c38a3483d7cfad6ff593b2b0edb6": "usr_player_002",
+    "tok_dfebf01e5a2923174182d94b2220fb7351b2292b21a01eb0": "usr_player_001",
+    "tok_604e279bd835e4fc135d4b29e717c0ba5598b27162c25e62": "usr_player_001",
+    "tok_ce9ad7bc85099d6dab2419e555d3f05f6666128817ae550b": "usr_admin_001",
+    "tok_446dc3ff093d32efb19cf78c389f0cd057a6db2548413dd6": "usr_admin_001",
+    "tok_c3789840f4c2641009f965a972d1800d4d1378f4b31a0b24": "usr_player_001",
+    "tok_996c44f97c19badeb08acfcf9523f3c6bf28e651e43892a5": "usr_admin_001",
+    "tok_214534f099d3de372461a5eb760982c8df6bbdb3eb6c2dc1": "usr_admin_001",
+    "tok_6e502e06646aa451335601e45e8d8b3d7e710ff29a8d7183": "usr_player_001",
+    "tok_b1d403e1c9db60fe36c68213c92dd584a33b1ca42c3b3bfd": "usr_admin_001",
+    "tok_fc9d74cb8d9747186f59e37ea86c8c612929b6c52f488206": "usr_player_001",
+    "tok_8c55cbbce5d96861a2e185189a6e98ff1411abe700a82661": "usr_admin_001"
+  },
+  "tournaments": [
+    {
+      "id": "tour_16d37823",
+      "title": "Apex Masters Invitational #3631",
+      "game": "BGMI",
+      "mode": "Squad",
+      "map": "Erangel",
+      "banner": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80",
+      "entryFeePaise": 5000,
+      "prizePoolPaise": 500000,
+      "prizeBreakdown": {
+        "rank1": 250000,
+        "rank2": 150000,
+        "rank3": 100000,
+        "perKill": 1500
+      },
+      "matchTime": "2026-10-29T08:47:33.631Z",
+      "registrationDeadline": "2026-10-29T08:32:33.632Z",
+      "totalSlots": 50,
+      "registeredParticipants": [
+        {
+          "userId": "usr_player_001",
+          "username": "RahulPro",
+          "gameIgn": "TX・RAHUL⚡",
+          "gameUid": "5129482103",
+          "slotNo": 1,
+          "joinedAt": "2026-10-29T07:47:33.647Z"
+        }
+      ],
+      "status": "UPCOMING",
+      "rules": [
+        "Standard competitive esports rules apply."
+      ],
+      "eligibility": "Open to all registered players",
+      "supportContact": "support@battleesports.com",
+      "roomDetails": {
+        "released": true,
+        "roomId": "ROOM_PUSH_1636",
+        "roomPassword": "pass_1636",
+        "releasedAt": "2026-10-29T07:47:33.683Z",
+        "updatedAt": "2026-11-02T11:05:51.637Z"
+      }
+    },
+    {
+      "id": "tour_bgmi_erangel_01",
+      "title": "BGMI Erangel Mega Championship #324",
+      "game": "BGMI",
+      "mode": "Squad",
+      "map": "Erangel",
+      "banner": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80",
+      "entryFeePaise": 5000,
+      "prizePoolPaise": 500000,
+      "prizeBreakdown": {
+        "rank1": 250000,
+        "rank2": 150000,
+        "rank3": 100000,
+        "perKill": 2500
+      },
+      "matchTime": "2026-10-26T09:15:00.045Z",
+      "registrationDeadline": "2026-10-26T09:00:00.045Z",
+      "totalSlots": 100,
+      "registeredParticipants": [
+        {
+          "userId": "usr_player_001",
+          "username": "RahulPro",
+          "gameIgn": "TX・RAHUL⚡",
+          "gameUid": "5129482103",
+          "slotNo": 14,
+          "joinedAt": "2026-10-26T06:30:00.045Z"
+        },
+        {
+          "userId": "usr_player_002",
+          "username": "VickySniper",
+          "gameIgn": "GOD・VICKY父",
+          "gameUid": "5192849201",
+          "slotNo": 15,
+          "joinedAt": "2026-10-26T07:00:00.045Z"
+        }
+      ],
+      "status": "UPCOMING",
+      "rules": [
+        "Emulators and iPad view are strictly banned.",
+        "Hacking, scripting, or teaming up results in an immediate permanent ban without refund.",
+        "Room ID & Password will be shared 15 minutes before match start.",
+        "All players must record their gameplay or take end-match screenshots."
+      ],
+      "eligibility": "Level 35+ BGMI Account, Tier Diamond or above.",
+      "supportContact": "discord.gg/battleesports or support@battleesports.com",
+      "roomDetails": {
+        "released": true,
+        "roomId": "8392014",
+        "roomPassword": "battle_squad_99",
+        "releasedAt": "2026-10-26T08:25:00.045Z"
+      }
+    },
+    {
+      "id": "tour_ff_bermuda_02",
+      "title": "Free Fire MAX Bermuda Clash Solo",
+      "game": "FREE FIRE MAX",
+      "mode": "Solo",
+      "map": "Bermuda",
+      "banner": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop&q=80",
+      "entryFeePaise": 2500,
+      "prizePoolPaise": 250000,
+      "prizeBreakdown": {
+        "rank1": 125000,
+        "rank2": 75000,
+        "rank3": 50000,
+        "perKill": 1500
+      },
+      "matchTime": "2026-10-26T10:30:00.045Z",
+      "registrationDeadline": "2026-10-26T10:10:00.045Z",
+      "totalSlots": 48,
+      "registeredParticipants": [
+        {
+          "userId": "usr_player_003",
+          "username": "AnanyaSlayer",
+          "gameIgn": "QUEEN・ANANYA",
+          "gameUid": "902819402",
+          "slotNo": 7,
+          "joinedAt": "2026-10-26T07:30:00.045Z"
+        },
+        {
+          "userId": "usr_player_001",
+          "username": "RahulPro",
+          "gameIgn": "TX・RAHUL⚡",
+          "gameUid": "5129482103",
+          "slotNo": 2,
+          "joinedAt": "2026-10-26T08:30:19.644Z"
+        }
+      ],
+      "status": "UPCOMING",
+      "rules": [
+        "Gun skins attributes are OFF for fair competitive play.",
+        "Characters like Chrono/Skyler skills are permitted according to standard tournament guidelines.",
+        "Room ID & Password will be published 15 minutes before the match."
+      ],
+      "eligibility": "Free Fire MAX Level 25+ accounts only.",
+      "supportContact": "support@battleesports.com",
+      "roomDetails": {
+        "released": false
+      }
+    },
+    {
+      "id": "tour_bgmi_tdm_03",
+      "title": "BGMI 1v1 M416 Warehouse Championship",
+      "game": "BGMI TDM",
+      "mode": "1v1 TDM",
+      "map": "Warehouse",
+      "banner": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80",
+      "entryFeePaise": 3000,
+      "prizePoolPaise": 100000,
+      "prizeBreakdown": {
+        "rank1": 70000,
+        "rank2": 30000,
+        "rank3": 0,
+        "perKill": 0
+      },
+      "matchTime": "2026-10-26T12:30:00.045Z",
+      "registrationDeadline": "2026-10-26T11:50:00.045Z",
+      "totalSlots": 16,
+      "registeredParticipants": [],
+      "status": "UPCOMING",
+      "rules": [
+        "M416 Only. No Slide. No Grenades or Stun.",
+        "Vest and Helmet Level 2 only.",
+        "First to 15 points wins."
+      ],
+      "eligibility": "Open to all mobile players.",
+      "supportContact": "support@battleesports.com",
+      "roomDetails": {
+        "released": false
+      }
+    },
+    {
+      "id": "tour_codm_crash_04",
+      "title": "Call of Duty Mobile Search & Destroy Cup",
+      "game": "CALL OF DUTY",
+      "mode": "Squad",
+      "map": "Crash / Standoff",
+      "banner": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&auto=format&fit=crop&q=80",
+      "entryFeePaise": 4000,
+      "prizePoolPaise": 400000,
+      "prizeBreakdown": {
+        "rank1": 220000,
+        "rank2": 120000,
+        "rank3": 60000,
+        "perKill": 1000
+      },
+      "matchTime": "2026-10-26T14:30:00.045Z",
+      "registrationDeadline": "2026-10-26T14:00:00.045Z",
+      "totalSlots": 20,
+      "registeredParticipants": [],
+      "status": "UPCOMING",
+      "rules": [
+        "Hardpoint & Search and Destroy standard rules.",
+        "Banned weapons: NA-45, Akimbo Fennec, Operator Skills restricted."
+      ],
+      "eligibility": "Master tier and above.",
+      "supportContact": "support@battleesports.com",
+      "roomDetails": {
+        "released": false
+      }
+    },
+    {
+      "id": "tour_completed_05",
+      "title": "BGMI Erangel Pro Masters (Season Finale)",
+      "game": "BGMI",
+      "mode": "Squad",
+      "map": "Erangel",
+      "banner": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=800&auto=format&fit=crop&q=80",
+      "entryFeePaise": 5000,
+      "prizePoolPaise": 600000,
+      "prizeBreakdown": {
+        "rank1": 300000,
+        "rank2": 180000,
+        "rank3": 120000,
+        "perKill": 3000
+      },
+      "matchTime": "2026-10-25T08:30:00.045Z",
+      "registrationDeadline": "2026-10-25T07:30:00.045Z",
+      "totalSlots": 100,
+      "registeredParticipants": [
+        {
+          "userId": "usr_player_001",
+          "username": "RahulPro",
+          "gameIgn": "TX・RAHUL⚡",
+          "gameUid": "5129482103",
+          "slotNo": 1,
+          "joinedAt": "2026-10-25T05:50:00.045Z"
+        }
+      ],
+      "status": "COMPLETED",
+      "rules": [
+        "Standard competitive tournament rules."
+      ],
+      "eligibility": "Verified users.",
+      "supportContact": "support@battleesports.com",
+      "roomDetails": {
+        "released": true,
+        "roomId": "7192840",
+        "roomPassword": "finished_room",
+        "releasedAt": "2026-10-25T08:20:00.045Z"
+      },
+      "results": [
+        {
+          "rank": 1,
+          "userId": "usr_player_001",
+          "username": "RahulPro",
+          "gameIgn": "TX・RAHUL⚡",
+          "kills": 8,
+          "prizePaise": 324000
+        },
+        {
+          "rank": 2,
+          "username": "HydraViper",
+          "gameIgn": "HYDRA・VIPER",
+          "kills": 5,
+          "prizePaise": 195000
+        },
+        {
+          "rank": 3,
+          "username": "MortalFan99",
+          "gameIgn": "SOUL・MORTAL99",
+          "kills": 4,
+          "prizePaise": 132000
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_wth_097be680",
+      "userId": "usr_player_001",
+      "type": "WITHDRAWAL",
+      "amountPaise": -10000,
+      "balanceAfterPaise": 7500,
+      "status": "COMPLETED",
+      "description": "Withdrawal to rahul@oksbi (Ref: IMPS_PUSH_551651)",
+      "referenceId": "wth_61c3d8c6",
+      "createdAt": "2026-11-02T11:05:51.643Z"
+    },
+    {
+      "id": "tx_join_20ebe691",
+      "userId": "usr_player_001",
+      "type": "ENTRY_FEE",
+      "amountPaise": -5000,
+      "balanceAfterPaise": 17500,
+      "status": "COMPLETED",
+      "description": "Joined Apex Masters Invitational #3631 (Slot #1)",
+      "referenceId": "tour_16d37823",
+      "idempotencyKey": "join_tour_16d37823_usr_player_001",
+      "createdAt": "2026-10-29T07:47:33.647Z"
+    },
+    {
+      "id": "tx_dep_113b2940",
+      "userId": "usr_51895f85",
+      "type": "DEPOSIT",
+      "amountPaise": 20000,
+      "balanceAfterPaise": 20000,
+      "status": "COMPLETED",
+      "description": "Deposit via UPI (Ref: ORD_MVPHBOEF_9494)",
+      "referenceId": "dep_093de38e",
+      "idempotencyKey": "dep_credit_dep_093de38e",
+      "createdAt": "2026-10-26T16:36:55.269Z"
+    },
+    {
+      "id": "tx_dep_383c65d9",
+      "userId": "usr_1bcddff0",
+      "type": "DEPOSIT",
+      "amountPaise": 20000,
+      "balanceAfterPaise": 20000,
+      "status": "COMPLETED",
+      "description": "Deposit via UPI (Ref: ORD_MVPHBA35_CAAD)",
+      "referenceId": "dep_8df90149",
+      "idempotencyKey": "dep_credit_dep_8df90149",
+      "createdAt": "2026-10-26T16:36:36.715Z"
+    },
+    {
+      "id": "tx_dep_de4f05d0",
+      "userId": "usr_1b20c2a6",
+      "type": "DEPOSIT",
+      "amountPaise": 20000,
+      "balanceAfterPaise": 20000,
+      "status": "COMPLETED",
+      "description": "Deposit via UPI (Ref: ORD_MVPHB1FK_5732)",
+      "referenceId": "dep_e1848459",
+      "idempotencyKey": "dep_credit_dep_e1848459",
+      "createdAt": "2026-10-26T16:36:25.503Z"
+    },
+    {
+      "id": "tx_wth_ref_80dc3e68",
+      "userId": "usr_player_001",
+      "type": "REFUND",
+      "amountPaise": 15000,
+      "balanceAfterPaise": 22500,
+      "status": "COMPLETED",
+      "description": "Refund for Rejected Withdrawal: Invalid UPI VPA - beneficiary name mismatch",
+      "referenceId": "wth_cb4c31b7",
+      "idempotencyKey": "wth_refund_wth_cb4c31b7",
+      "createdAt": "2026-10-26T16:17:19.735Z"
+    },
+    {
+      "id": "tx_wth_3a36913e",
+      "userId": "usr_player_001",
+      "type": "WITHDRAWAL",
+      "amountPaise": -15000,
+      "balanceAfterPaise": 7500,
+      "status": "REJECTED",
+      "description": "Withdrawal request to rahul@oksbi",
+      "referenceId": "wth_cb4c31b7",
+      "createdAt": "2026-10-26T16:17:19.689Z"
+    },
+    {
+      "id": "tx_wth_a3913630",
+      "userId": "usr_player_001",
+      "type": "WITHDRAWAL",
+      "amountPaise": -10000,
+      "balanceAfterPaise": 22500,
+      "status": "COMPLETED",
+      "description": "Withdrawal to rahul@oksbi (Ref: UTR_ICICI_9381029410)",
+      "referenceId": "wth_09c2052c",
+      "createdAt": "2026-10-26T16:17:19.542Z"
+    },
+    {
+      "id": "tx_join_8f1751db",
+      "userId": "usr_player_001",
+      "type": "ENTRY_FEE",
+      "amountPaise": -2500,
+      "balanceAfterPaise": 32500,
+      "status": "COMPLETED",
+      "description": "Joined Free Fire MAX Bermuda Clash Solo (Slot #2)",
+      "referenceId": "tour_ff_bermuda_02",
+      "idempotencyKey": "join_tour_ff_bermuda_02_usr_player_001",
+      "createdAt": "2026-10-26T08:30:19.644Z"
+    },
+    {
+      "id": "tx_init_01",
+      "userId": "usr_player_001",
+      "type": "DEPOSIT",
+      "amountPaise": 50000,
+      "balanceAfterPaise": 50000,
+      "status": "COMPLETED",
+      "description": "UPI Deposit via PhonePe (UTR: 419208392810)",
+      "referenceId": "dep_init_01",
+      "createdAt": "2026-10-24T08:30:00.045Z"
+    },
+    {
+      "id": "tx_init_02",
+      "userId": "usr_player_001",
+      "type": "ENTRY_FEE",
+      "amountPaise": -5000,
+      "balanceAfterPaise": 45000,
+      "status": "COMPLETED",
+      "description": "Joined BGMI Pro Masters (Season Finale)",
+      "referenceId": "tour_completed_05",
+      "createdAt": "2026-10-25T08:30:00.045Z"
+    },
+    {
+      "id": "tx_init_03",
+      "userId": "usr_player_001",
+      "type": "PRIZE",
+      "amountPaise": 324000,
+      "balanceAfterPaise": 369000,
+      "status": "COMPLETED",
+      "description": "Rank 1 Prize + 8 Kills in BGMI Pro Masters",
+      "referenceId": "tour_completed_05",
+      "createdAt": "2026-10-25T10:30:00.045Z"
+    },
+    {
+      "id": "tx_init_04",
+      "userId": "usr_player_001",
+      "type": "WITHDRAWAL",
+      "amountPaise": -329000,
+      "balanceAfterPaise": 40000,
+      "status": "COMPLETED",
+      "description": "Payout to UPI: rahultripathi@oksbi",
+      "referenceId": "wth_init_01",
+      "createdAt": "2026-10-25T20:30:00.045Z"
+    },
+    {
+      "id": "tx_init_05",
+      "userId": "usr_player_001",
+      "type": "ENTRY_FEE",
+      "amountPaise": -5000,
+      "balanceAfterPaise": 35000,
+      "status": "COMPLETED",
+      "description": "Joined BGMI Erangel Mega Championship #324",
+      "referenceId": "tour_bgmi_erangel_01",
+      "createdAt": "2026-10-26T06:30:00.045Z"
+    }
+  ],
+  "deposits": [
+    {
+      "id": "dep_e886a39a",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 200000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO20F_8C87",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=2000.00&tn=Deposit_ORD_MVQJO20F_8C87",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:30:18.183Z",
+      "updatedAt": "2026-10-27T10:30:18.183Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_e35f64c6",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 100000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO1ZN_BEB9",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=1000.00&tn=Deposit_ORD_MVQJO1ZN_BEB9",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:30:18.155Z",
+      "updatedAt": "2026-10-27T10:30:18.155Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_d1533fa7",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 50000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO1YU_9531",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=500.00&tn=Deposit_ORD_MVQJO1YU_9531",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:30:18.125Z",
+      "updatedAt": "2026-10-27T10:30:18.125Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_152dd734",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO1XV_B12F",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=100.00&tn=Deposit_ORD_MVQJO1XV_B12F",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoCAYAAAB65WHVAAAAAklEQVR4AewaftIAAA6FSURBVO3BUWotupYEwUrh+U+52tDf0gMdtL3smxH0WyRJ46xIkkZakSSNtCJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI61IkkZakSSNtCJJGmlFkjTSiiRppBVJ0khf+QdA/pK2uQHkpG12gHxa25wA2WmbF4DstM0JkFttcwPIrbbZAXKrbXaA3GqbW0B22mYHyF/SNjdWJEkjrUiSRlqRJI20IkkaaUWSNNKKJGmkFUnSSF95qG0mAfJC25wA2WmbHSC32mYHyEnb3ABy0jY7bbMD5BUgN9rmBMgOkJ22eaFtXgBy0jYvtM0kQF5YkSSNtCJJGmlFkjTSiiRppBVJ0kgrkqSRvvJDgLzQNi8AmaZtXgCy0zYvANlpmxMgO21zC8gOkJ8A5IW2+SuAvNA2n7YiSRppRZI00ookaaQVSdJIK5KkkVYkSSN9RT8KyAtAdtrmBMgOkJ22+W2A7LTNLSA7bbMD5KRtdoDstM1PALLTNjpbkSSNtCJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI31F/6xtbgHZaZtp2mYHyAtAbgG5BeRW27wA5AUgmmdFkjTSiiRppBVJ0kgrkqSRViRJI61Ikkb6yg9pm/8KIDeA3GqbW22zA2SnbW4B2WmbV4DstM0LQHba5ie0zV/RNn/FiiRppBVJ0kgrkqSRViRJI61IkkZakSSN9JWHgOisbXaAnLTNDpCdtjkBstM2O0BO2uYFIDtt8wKQk7Z5AchO2+wAOWmbHSA7bXMCZKdtbgH5L1iRJI20IkkaaUWSNNKKJGmkFUnSSCuSpJFWJEkj0W/R/wRkp21eAHLSNjeAnLTNpwHZaZtXgNxomxMgL7TNC0A+rW10tiJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI9FvuQTkpG12gEzTNjoDstM2t4D8Jm3zApBbbbMD5KRtbgA5aZsbQKZpm09bkSSNtCJJGmlFkjTSiiRppBVJ0kgrkqSRvvIQkBfaZgfITtvcAvJpbTNN2+wAudU2PwHIb9I2O0B22uYEyE7b7LTNCZCdttlpm1tAbrXNDpBbbXNjRZI00ookaaQVSdJIK5KkkVYkSSOtSJJGWpEkjfSVh9pmEiAnbfNC2+wAeQHITtucALnRNi8AOWmbTwNy0jYvANlpmx0gJ22zA2SnbU7a5gaQk7a50TYvtM0LK5KkkVYkSSOtSJJGWpEkjbQiSRppRZI0Ev2WXwbIjbZ5AcittnkByKe1zU8A8kLbvADkVtvcAHLSNjeAnLTNDpAX2mYHyAtt88KKJGmkFUnSSCuSpJFWJEkjrUiSRlqRJI30lX8A5KRtXmibG0BO2mYHyE7bvADkVtvcAnIDyEnb3ABy0jY7QE7a5gUgO22zA+QEyI22OQGy0zYvtM0OkJO22QGy0za3gHzaiiRppBVJ0kgrkqSRViRJI61IkkZakSSNtCJJGol+yyNAdtpmB8gLbfMCkJ/QNjtAbrXNDpCdtrkF5IW2OQHyQtu8AORG25wA2WmbW0ButM0LQE7aZgfIrba5sSJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI9FvuQTkVtvcAvJpbXMLyE7b7AD5CW2zA+RW29wActI2O0BO2mYHyDRtcwPISdvsAJmmbV4AstM2O0BO2ubGiiRppBVJ0kgrkqSRViRJI61IkkZakSSNRL/lBwB5oW1uAdlpmx0gJ22zA+SFttkB8kLbnAC50TYnQHba5gTITtvsALnVNreA7LTNDpBp2uYWkEna5oUVSdJIK5KkkVYkSSOtSJJGWpEkjbQiSRppRZI00lf+Q4CctM0OkFtAbrTNCZAX2mYHyA6Qk7a5AeSkbXaA3AKy0zYvALkFZKdtbgG51TY7QHba5qRtbgC51TaftiJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI9FvuQTkVttMA2SnbXQG5KRtdoDstM0rQHbaZgfISdvcAPJC27wA5IW2uQVkp21eAHLSNjdWJEkjrUiSRlqRJI20IkkaaUWSNNKKJGmkrzzUNjeA6H8DstM2O0Butc0tIDttswPkpG12gJy0zY22OQHyQtvsANkBcqttXmibF9rmFpCdttlpmxdWJEkjrUiSRlqRJI20IkkaaUWSNNKKJGmkFUnSSF/5B21zAuRG25wA2WmbW0BuADlpG91rm1ttcwvITtuctM0OkJ22eaFtToDcaJsTIC8AeaFtdoDstM0LK5KkkVYkSSOtSJJGWpEkjbQiSRppRZI0Ev2WS0BO2mYHyF/RNidAdtrmBSA7bXMCZKdtXgDym7TNCZCdttkBcqttpgHym7TNDSAnbXNjRZI00ookaaQVSdJIK5KkkVYkSSOtSJJG+so/aJtbbXMLyE7bvABkB8hJ2/wVQG61zY22eQXIpwHZaZsTIDtAdtrmBSC32uYFIDttcwJkp20+bUWSNNKKJGmkFUnSSCuSpJFWJEkjrUiSRlqRJI30lX8A5KRtbgB5AchJ29xomxMgf0Xb7AD5CUB22uZW2+wAOWmbHSC32uYGkJO22QGy0zYnQG4AOWmbTwOy0zYvrEiSRlqRJI20IkkaaUWSNNKKJGmkFUnSSF/5B21zAmSnbT6tbV4A8psAOWmbHSDTtM2ntc0JkBtAXmibF4C80DYvALnVNjtATtrmxookaaQVSdJIK5KkkVYkSSOtSJJGWpEkjbQiSRqJfssPAPJXtM0JkE9rmx0gJ21zA4j+X9u8AGSnbXaAnLTNDpC/om1+kxVJ0kgrkqSRViRJI61IkkZakSSNtCJJGol+yyUgJ21zA8ittrkF5IW2uQHkpG1uAPlN2uYEyKe1zQmQnbbZAXLSNn8FkJ22+QlAXmibGyuSpJFWJEkjrUiSRlqRJI20IkkaaUWSNBL9lktAbrXNC0Butc0LQCZpmxMgO20zDZBbbbMD5Fbb7AC51TY3gJy0zQ6QW21zA8hJ29wA8kLbvLAiSRppRZI00ookaaQVSdJIK5KkkVYkSSOtSJJG+spDbbMD5NPa5ie0zQ6Qnba5BWQHyC0gO21zAuRG27wCZKdtbgF5AchO29wCstM2LwD5TdpmB8hJ29xYkSSNtCJJGmlFkjTSiiRppBVJ0kgrkqSRvvIQkBfa5gaQk7a5AeSkbV4AstM2fwWQV9pmB8hO29xqmx0gt4DstM0JkN8EyI22eaFtXliRJI20IkkaaUWSNNKKJGmkFUnSSCuSpJHotzwCZKdtdoDcaptpgOy0zS0gL7TNDpCdtnkByEnb7AA5aZsdILfa5gaQn9A2N4BM0zY7QF5omxdWJEkjrUiSRlqRJI20IkkaaUWSNNKKJGmkFUnSSF/5IUBeAPJC2+wAmaZtdoCcANlpmx0gJ22zA0T/pm1uAbnRNidAbrTNCZAdIDttcwvIDpCTtrmxIkkaaUWSNNKKJGmkFUnSSCuSpJFWJEkjfeUfAPkJbfObtM0NICdt80LbfFrb7AB5BciNtrkF5AUgnwbkBSC/Sdu8sCJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI9FveQTIjbZ5AchJ23wakJ22eQHIb9I2J0A+rW1OgOy0zS0gO23zmwDZaZsXgNxqmx0gJ21zY0WSNNKKJGmkFUnSSCuSpJFWJEkjrUiSRlqRJI30lR/SNjtAbrXNTtvcAjINkBttcwvIC22zA+SkbT4NyEnb3AByC8hO25wA+bS2uQXk04B82ookaaQVSdJIK5KkkVYkSSOtSJJGWpEkjfSVh9rmRtucALkBZJq2+TQgJ21zo21OgNxom1tATtpmB8g0bfNC27wAZAfITtuctM0NIC+0zQsrkqSRViRJI61IkkZakSSNtCJJGmlFkjQS/ZZHgHxa29wCstM2O0BO2mYHyAttcwvIC21zA8hJ2+wAOWmbF4B8Wtu8AORW2+wAeaFtbgG50TYvrEiSRlqRJI20IkkaaUWSNNKKJGmkFUnSSCuSpJHot1wCctI2N4DcapsdILfaZgfISdu8AOQ3aZsdIL9J20wDZKdtfgIQJW1zY0WSNNKKJGmkFUnSSCuSpJFWJEkjrUiSRvrKP2ibF9rmhba5BeQFILfaZgfIC21zC8iNtnkFyAtAdtpmB8hPALLTNi+0zQtAdtrmFpBPW5EkjbQiSRppRZI00ookaaQVSdJIK5Kkkb7yD4D8JW2z0zY7QG61zQ6QEyA7bbMD5KRtbgA5aZsdILeA7LTNX9I2O0B2gJy0zQ6QnbZ5AchJ29wA8kLbvLAiSRppRZI00ookaaQVSdJIK5KkkVYkSSOtSJJG+spDbTMJkFtApmmbF4DcaJsTIC+0zQtt8wKQW0BeALLTNp/WNi+0zQmQSVYkSSOtSJJGWpEkjbQiSRppRZI00ookaaSv/BAgL7SNEiCfBuSkbXaA7AD5bdrmBpBbbbMDZBognwbkpG12gHzaiiRppBVJ0kgrkqSRViRJI61IkkZakSSN9BX9KCC3gOy0zQ6QW21zC8iNtjkBstM2J0B2gOy0zQmQnbbZaZsTIDfa5jdpmxMgO22zA+QFICdtc2NFkjTSiiRppBVJ0kgrkqSRViRJI61IkkZakSSN9BX9s7a51TY7QF5om5/QNjtAdoCctM0OkFttswPkpG1eaJsXgLzQNjeAnLTNDpBbQHba5tNWJEkjrUiSRlqRJI20IkkaaUWSNNKKJGmkr/yQtvlN2ubT2uYWkFttswNkp22maZufAGSnbT4NyE8A8gKQ/4IVSdJIK5KkkVYkSSOtSJJGWpEkjbQiSRrpKw8B+SuA3GqbHSA7bXMCZKdtdoDcapsX2uYWkJ22uQVkp21eAPJC27wA5KRtdoDstM0JkBttcwvITtu8sCJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI61Ikkai3yJJGmdFkjTSiiRppBVJ0kgrkqSRViRJI61IkkZakSSNtCJJGmlFkjTSiiRppBVJ0kgrkqSRViRJI/0fNgeZDwiZCIAAAAAASUVORK5CYII=",
+      "createdAt": "2026-10-27T10:30:18.092Z",
+      "updatedAt": "2026-10-27T10:30:18.092Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_42de8c19",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 5000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO1WY_5778",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=50.00&tn=Deposit_ORD_MVQJO1WY_5778",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:30:18.061Z",
+      "updatedAt": "2026-10-27T10:30:18.061Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_bda0f3ca",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 2000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO1VW_BD14",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=20.00&tn=Deposit_ORD_MVQJO1VW_BD14",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:30:18.028Z",
+      "updatedAt": "2026-10-27T10:30:18.028Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_b887c649",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 1000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJO1TP_D520",
+      "qrPayload": "upi://pay?pa=battleesports.tournaments%40icici&pn=BATTLE+ESPORTS+TOURNAMENTS+LTD&cu=INR&am=10.00&tn=Deposit_ORD_MVQJO1TP_D520",
+      "merchantUpiId": "battleesports.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:30:17.990Z",
+      "updatedAt": "2026-10-27T10:30:17.990Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_e40e87a0",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 25000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVQJ2GZC_D09E",
+      "qrPayload": "upi://pay?pa=battle.tournaments%40icici&pn=BATTLE+ESPORTS+CHAMPIONSHIPS&cu=INR&am=250.00&tn=Deposit_ORD_MVQJ2GZC_D09E",
+      "merchantUpiId": "battle.tournaments@icici",
+      "merchantQrImageUrl": "data:image/png;base64,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",
+      "createdAt": "2026-10-27T10:13:31.156Z",
+      "updatedAt": "2026-10-27T10:13:31.156Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_093de38e",
+      "userId": "usr_51895f85",
+      "username": "SniperElite_30674",
+      "amountPaise": 20000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "SUCCESSFUL",
+      "providerRef": "ORD_MVPHBOEF_9494",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=200.00&cu=INR&tn=Deposit_ORD_MVPHBOEF_9494",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:36:55.239Z",
+      "updatedAt": "2026-10-26T16:36:55.269Z",
+      "verificationNotes": "Instantly verified via Mock UPI Payment Gateway Callback"
+    },
+    {
+      "id": "dep_8df90149",
+      "userId": "usr_1bcddff0",
+      "username": "PersistCheck",
+      "amountPaise": 20000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "SUCCESSFUL",
+      "providerRef": "ORD_MVPHBA35_CAAD",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=200.00&cu=INR&tn=Deposit_ORD_MVPHBA35_CAAD",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:36:36.689Z",
+      "updatedAt": "2026-10-26T16:36:36.715Z",
+      "verificationNotes": "Instantly verified via Mock UPI Payment Gateway Callback"
+    },
+    {
+      "id": "dep_e1848459",
+      "userId": "usr_1b20c2a6",
+      "username": "ApexGod_12677",
+      "amountPaise": 20000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "SUCCESSFUL",
+      "providerRef": "ORD_MVPHB1FK_5732",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=200.00&cu=INR&tn=Deposit_ORD_MVPHB1FK_5732",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:36:25.472Z",
+      "updatedAt": "2026-10-26T16:36:25.503Z",
+      "verificationNotes": "Instantly verified via Mock UPI Payment Gateway Callback"
+    },
+    {
+      "id": "dep_c6620756",
+      "userId": "usr_678f87c7",
+      "username": "ApexGod_23769",
+      "amountPaise": 20000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVPHA5ZH_7FF7",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=200.00&cu=INR&tn=Deposit_ORD_MVPHA5ZH_7FF7",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:35:44.717Z",
+      "updatedAt": "2026-10-26T16:35:44.717Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_ce78a4a4",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVPGN0J9_030F",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=100.00&cu=INR&tn=Deposit_ORD_MVPGN0J9_030F",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:17:44.565Z",
+      "updatedAt": "2026-10-26T16:17:44.565Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_ee9765fd",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVPGMH6L_DCF2",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=100.00&cu=INR&tn=Deposit_ORD_MVPGMH6L_DCF2",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:17:19.485Z",
+      "updatedAt": "2026-10-26T16:17:19.485Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_c8105231",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVPGLN5J_4273",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=100.00&cu=INR&tn=Deposit_ORD_MVPGLN5J_4273",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:16:40.567Z",
+      "updatedAt": "2026-10-26T16:16:40.567Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_51449ddb",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "providerRef": "ORD_MVPGKLT9_025D",
+      "qrPayload": "upi://pay?pa=esports.payouts%40axisbank&pn=BATTLE%20TOURNAMENTS%20APEX&am=100.00&cu=INR&tn=Deposit_ORD_MVPGKLT9_025D",
+      "merchantUpiId": "esports.payouts@axisbank",
+      "merchantQrImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "createdAt": "2026-10-26T16:15:52.173Z",
+      "updatedAt": "2026-10-26T16:15:52.173Z",
+      "verificationNotes": "Payment initiated via official merchant UPI QR"
+    },
+    {
+      "id": "dep_p01",
+      "userId": "usr_player_002",
+      "username": "VickySniper",
+      "amountPaise": 10000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "PENDING",
+      "utr": "429104928192",
+      "providerRef": "PAY_ORD_98124",
+      "createdAt": "2026-10-26T08:05:00.045Z",
+      "updatedAt": "2026-10-26T08:05:00.045Z",
+      "verificationNotes": "Awaiting webhook confirmation / Admin manual check"
+    },
+    {
+      "id": "dep_s01",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 50000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "SUCCESSFUL",
+      "utr": "419208392810",
+      "providerRef": "PAY_ORD_97812",
+      "createdAt": "2026-10-24T08:30:00.045Z",
+      "updatedAt": "2026-10-24T08:32:00.045Z",
+      "verificationNotes": "Verified via Gateway Webhook Signature"
+    },
+    {
+      "id": "dep_r01",
+      "userId": "usr_player_003",
+      "username": "AnanyaSlayer",
+      "amountPaise": 20000,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "REJECTED",
+      "utr": "INVALID_UTR_99",
+      "providerRef": "PAY_ORD_94102",
+      "createdAt": "2026-10-23T08:30:00.045Z",
+      "updatedAt": "2026-10-23T09:30:00.045Z",
+      "verificationNotes": "Bank reported no credit for UTR"
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "wth_61c3d8c6",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "payoutUpiId": "rahul@oksbi",
+      "status": "SUCCESSFUL",
+      "createdAt": "2026-11-02T11:05:51.643Z",
+      "adminNotes": "IMPS transfer confirmed",
+      "processedAt": "2026-11-02T11:05:51.652Z",
+      "referenceNo": "IMPS_PUSH_551651"
+    },
+    {
+      "id": "wth_cb4c31b7",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 15000,
+      "payoutUpiId": "rahul@oksbi",
+      "status": "REJECTED",
+      "createdAt": "2026-10-26T16:17:19.689Z",
+      "processedAt": "2026-10-26T16:17:19.735Z",
+      "adminNotes": "Invalid UPI VPA - beneficiary name mismatch"
+    },
+    {
+      "id": "wth_09c2052c",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 10000,
+      "payoutUpiId": "rahul@oksbi",
+      "status": "SUCCESSFUL",
+      "createdAt": "2026-10-26T16:17:19.542Z",
+      "adminNotes": "Paid successfully via corporate payout API",
+      "processedAt": "2026-10-26T16:17:19.619Z",
+      "referenceNo": "UTR_ICICI_9381029410"
+    },
+    {
+      "id": "wth_p01",
+      "userId": "usr_player_002",
+      "username": "VickySniper",
+      "amountPaise": 10000,
+      "payoutUpiId": "vicky@paytm",
+      "status": "SUCCESSFUL",
+      "createdAt": "2026-10-26T08:15:00.045Z",
+      "adminNotes": "Paid successfully via corporate payout API",
+      "processedAt": "2026-10-26T16:16:40.650Z",
+      "referenceNo": "UTR_ICICI_9381029410"
+    },
+    {
+      "id": "wth_init_01",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "amountPaise": 329000,
+      "payoutUpiId": "rahultripathi@oksbi",
+      "status": "SUCCESSFUL",
+      "createdAt": "2026-10-25T20:30:00.045Z",
+      "processedAt": "2026-10-25T21:30:00.045Z",
+      "adminNotes": "IMPS Ref: 419284019283 - Payout Confirmed",
+      "referenceNo": "IMPS_419284019283"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tkt_001",
+      "userId": "usr_player_001",
+      "username": "RahulPro",
+      "category": "ROOM_CREDS",
+      "subject": "Clarification regarding room password slot assignment",
+      "status": "RESOLVED",
+      "createdAt": "2026-10-24T20:30:00.045Z",
+      "updatedAt": "2026-10-24T21:30:00.045Z",
+      "messages": [
+        {
+          "id": "msg_1",
+          "sender": "user",
+          "senderName": "RahulPro",
+          "text": "Hi support team, in BGMI squad matches do we have to sit in our assigned slot number only?",
+          "timestamp": "2026-10-24T20:30:00.045Z"
+        },
+        {
+          "id": "msg_2",
+          "sender": "admin",
+          "senderName": "BattleAdmin",
+          "text": "Hello Rahul! Yes, you must strictly join your designated Slot #14. Sitting in another team slot will lead to a kick from custom room.",
+          "timestamp": "2026-10-24T21:30:00.045Z"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_53e32760",
+      "userId": "usr_player_001",
+      "title": "⏰ Match Starting Soon: Apex Masters Invitational #3631",
+      "message": "Your BGMI match is starting shortly! Check My Matches to view room credentials.",
+      "type": "MATCH",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:51.655Z",
+      "linkTab": "matches",
+      "referenceId": "tour_16d37823",
+      "metadata": {
+        "tournamentId": "tour_16d37823",
+        "matchTime": "2026-10-29T08:47:33.631Z",
+        "manualAdminSend": true,
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_d9c8888a",
+      "userId": "usr_player_001",
+      "title": "💸 Payout Sent Successfully!",
+      "message": "₹100.00 transferred to UPI: rahul@oksbi (Ref: IMPS_PUSH_551651).",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:51.652Z",
+      "linkTab": "wallet",
+      "referenceId": "wth_61c3d8c6",
+      "metadata": {
+        "withdrawalId": "wth_61c3d8c6",
+        "status": "SUCCESSFUL",
+        "referenceNo": "IMPS_PUSH_551651",
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_7ba0edce",
+      "userId": "usr_player_001",
+      "title": "⏳ Withdrawal Status: Processing",
+      "message": "Your withdrawal of ₹100.00 to rahul@oksbi (ID: wth_61c3d8c6) is now being processed by our accounts team.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:51.647Z",
+      "linkTab": "wallet",
+      "referenceId": "wth_61c3d8c6",
+      "metadata": {
+        "withdrawalId": "wth_61c3d8c6",
+        "status": "PROCESSING",
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_3dc3a8c3",
+      "userId": "usr_player_001",
+      "title": "📤 Withdrawal Request Received",
+      "message": "Your request to withdraw ₹100.00 to rahul@oksbi is under review.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:51.643Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_ae287d50",
+      "userId": "usr_player_001",
+      "title": "🔑 Room Details Updated: Apex Masters Invitational #3631",
+      "message": "Room details have been updated for Apex Masters Invitational #3631. Open My Matches to view your Room ID and Password.",
+      "type": "ROOM",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:51.637Z",
+      "linkTab": "matches",
+      "referenceId": "tour_16d37823",
+      "metadata": {
+        "tournamentId": "tour_16d37823",
+        "isUpdate": true,
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_200ba8f0",
+      "userId": "usr_player_001",
+      "title": "🔔 Push Alert Test: BATTLE ESPORTS",
+      "message": "Your mobile push alerts are configured and working! Room credentials, tournament countdowns, and payout updates will alert you instantly.",
+      "type": "MATCH",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:51.632Z",
+      "linkTab": "matches",
+      "referenceId": "test_alert",
+      "metadata": {
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_37b80e37",
+      "userId": "usr_player_001",
+      "title": "⏰ Match Starting Soon: Apex Masters Invitational #3631",
+      "message": "Your BGMI match is starting shortly! Check My Matches to view room credentials.",
+      "type": "MATCH",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:36.306Z",
+      "linkTab": "matches",
+      "referenceId": "tour_16d37823",
+      "metadata": {
+        "tournamentId": "tour_16d37823",
+        "matchTime": "2026-10-29T08:47:33.631Z",
+        "manualAdminSend": true,
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_2553b1b6",
+      "userId": "usr_player_001",
+      "title": "🔑 Room Details Updated: Apex Masters Invitational #3631",
+      "message": "Room details have been updated for Apex Masters Invitational #3631. Open My Matches to view your Room ID and Password.",
+      "type": "ROOM",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:36.297Z",
+      "linkTab": "matches",
+      "referenceId": "tour_16d37823",
+      "metadata": {
+        "tournamentId": "tour_16d37823",
+        "isUpdate": true,
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_ef96d563",
+      "userId": "usr_player_001",
+      "title": "🔔 Push Alert Test: BATTLE ESPORTS",
+      "message": "Your mobile push alerts are configured and working! Room credentials, tournament countdowns, and payout updates will alert you instantly.",
+      "type": "MATCH",
+      "read": false,
+      "createdAt": "2026-11-02T11:05:36.287Z",
+      "linkTab": "matches",
+      "referenceId": "test_alert",
+      "metadata": {
+        "pushDispatched": true,
+        "soundEnabled": true,
+        "vibrateEnabled": true
+      }
+    },
+    {
+      "id": "notif_f07c7705",
+      "userId": "usr_player_001",
+      "title": "🔑 Room Details Updated: Apex Masters Invitational #3631",
+      "message": "Room details have been updated for Apex Masters Invitational #3631. Open My Matches to view your Room ID and Password.",
+      "type": "ROOM",
+      "read": false,
+      "createdAt": "2026-10-29T07:47:33.699Z",
+      "linkTab": "matches"
+    },
+    {
+      "id": "notif_55828b0d",
+      "userId": "usr_player_001",
+      "title": "🔑 Room Details Released: Apex Masters Invitational #3631",
+      "message": "Room details are available for Apex Masters Invitational #3631. Open My Matches to view your Room ID and Password.",
+      "type": "ROOM",
+      "read": false,
+      "createdAt": "2026-10-29T07:47:33.684Z",
+      "linkTab": "matches"
+    },
+    {
+      "id": "notif_4347641f",
+      "userId": "usr_player_001",
+      "title": "🎮 Tournament Registration Successful!",
+      "message": "You successfully joined Apex Masters Invitational #3631. Slot #1 assigned.",
+      "type": "MATCH",
+      "read": false,
+      "createdAt": "2026-10-29T07:47:33.647Z",
+      "linkTab": "matches"
+    },
+    {
+      "id": "notif_0f600a38",
+      "userId": "usr_player_001",
+      "title": "✅ Account Suspension Lifted",
+      "message": "Your account suspension has been lifted by administrator. You have full access to tournaments and wallet.",
+      "type": "ANNOUNCEMENT",
+      "read": false,
+      "createdAt": "2026-10-28T14:21:42.645Z",
+      "linkTab": "home"
+    },
+    {
+      "id": "notif_496ad699",
+      "userId": "usr_player_001",
+      "title": "⚠️ Account Suspended",
+      "message": "Your account has been suspended (Permanent). Reason: Repeated severe fair play violations",
+      "type": "ANNOUNCEMENT",
+      "read": false,
+      "createdAt": "2026-10-28T14:21:42.641Z"
+    },
+    {
+      "id": "notif_d85ee798",
+      "userId": "usr_player_001",
+      "title": "⚠️ Account Suspended",
+      "message": "Your account has been suspended (Temporary until 10/28/2026, 2:21:41 PM). Reason: Quick temporary ban for auto-expiry test",
+      "type": "ANNOUNCEMENT",
+      "read": false,
+      "createdAt": "2026-10-28T14:21:41.530Z"
+    },
+    {
+      "id": "notif_140b09e3",
+      "userId": "usr_player_001",
+      "title": "⚠️ Account Suspended",
+      "message": "Your account has been suspended (Temporary until 10/29/2026, 2:21:41 PM). Reason: Cheating in Tournament #324",
+      "type": "ANNOUNCEMENT",
+      "read": false,
+      "createdAt": "2026-10-28T14:21:41.503Z"
+    },
+    {
+      "id": "notif_a8803618",
+      "userId": "usr_fbba96d7",
+      "title": "🎉 Welcome to BATTLE ESPORTS!",
+      "message": "Account created successfully. Your permanent Gamer ID is usr_fbba96d7. 100 Bonus Battle Coins have been added to your wallet!",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-28T14:00:23.765Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_678a131f",
+      "userId": "usr_51895f85",
+      "title": "💰 Deposit Verified Successfully!",
+      "message": "₹200.00 has been added to your wallet balance.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:36:55.269Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_80e78231",
+      "userId": "usr_51895f85",
+      "title": "🎉 Welcome to BATTLE ESPORTS!",
+      "message": "Account created successfully. Your permanent Gamer ID is usr_51895f85. 100 Bonus Battle Coins have been added to your wallet!",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:36:55.196Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_5854b9bd",
+      "userId": "usr_1bcddff0",
+      "title": "💰 Deposit Verified Successfully!",
+      "message": "₹200.00 has been added to your wallet balance.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:36:36.715Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_96456f1f",
+      "userId": "usr_1bcddff0",
+      "title": "🎉 Welcome to BATTLE ESPORTS!",
+      "message": "Account created successfully. Your permanent Gamer ID is usr_1bcddff0. 100 Bonus Battle Coins have been added to your wallet!",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:36:36.653Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_e28a9e0d",
+      "userId": "usr_1b20c2a6",
+      "title": "💰 Deposit Verified Successfully!",
+      "message": "₹200.00 has been added to your wallet balance.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:36:25.503Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_88553239",
+      "userId": "usr_1b20c2a6",
+      "title": "🎉 Welcome to BATTLE ESPORTS!",
+      "message": "Account created successfully. Your permanent Gamer ID is usr_1b20c2a6. 100 Bonus Battle Coins have been added to your wallet!",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:36:25.425Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_e00045a9",
+      "userId": "usr_678f87c7",
+      "title": "🎉 Welcome to BATTLE ESPORTS!",
+      "message": "Account created successfully. Your permanent Gamer ID is usr_678f87c7. 100 Bonus Battle Coins have been added to your wallet!",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:35:44.676Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_0ab71e55",
+      "userId": "usr_player_001",
+      "title": "⚠️ Withdrawal Request Declined",
+      "message": "Your withdrawal of ₹150.00 was rejected (Invalid UPI VPA - beneficiary name mismatch). The amount has been refunded back to your wallet.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:17:19.735Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_0c6e3c5d",
+      "userId": "usr_player_001",
+      "title": "📤 Withdrawal Request Received",
+      "message": "Your request to withdraw ₹150.00 to rahul@oksbi is under review.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:17:19.689Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_e4999fc4",
+      "userId": "usr_player_001",
+      "title": "💸 Payout Sent Successfully!",
+      "message": "₹100.00 transferred to UPI: rahul@oksbi (Ref: UTR_ICICI_9381029410).",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:17:19.619Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_dc995b07",
+      "userId": "usr_player_001",
+      "title": "⏳ Withdrawal Status: Processing",
+      "message": "Your withdrawal of ₹100.00 to rahul@oksbi (ID: wth_09c2052c) is now being processed by our accounts team.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:17:19.572Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_c4168c14",
+      "userId": "usr_player_001",
+      "title": "📤 Withdrawal Request Received",
+      "message": "Your request to withdraw ₹100.00 to rahul@oksbi is under review.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:17:19.542Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_7143982a",
+      "userId": "usr_player_002",
+      "title": "💸 Payout Sent Successfully!",
+      "message": "₹100.00 transferred to UPI: vicky@paytm (Ref: UTR_ICICI_9381029410).",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:16:40.650Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_73348ac4",
+      "userId": "usr_player_002",
+      "title": "⏳ Withdrawal Status: Processing",
+      "message": "Your withdrawal of ₹100.00 to vicky@paytm (ID: wth_p01) is now being processed by our accounts team.",
+      "type": "WALLET",
+      "read": false,
+      "createdAt": "2026-10-26T16:16:40.603Z",
+      "linkTab": "wallet"
+    },
+    {
+      "id": "notif_0865abcb",
+      "userId": "usr_player_001",
+      "title": "🎮 Tournament Registration Successful!",
+      "message": "You successfully joined Free Fire MAX Bermuda Clash Solo. Slot #2 assigned.",
+      "type": "MATCH",
+      "read": false,
+      "createdAt": "2026-10-26T08:30:19.644Z",
+      "linkTab": "matches"
+    },
+    {
+      "id": "notif_01",
+      "userId": "usr_player_001",
+      "title": "🚨 Room ID & Password Released!",
+      "message": "Room details for BGMI Erangel Mega Championship #324 are now available. Room: 8392014, Pass: battle_squad_99",
+      "type": "ROOM",
+      "read": false,
+      "createdAt": "2026-10-26T08:25:00.045Z",
+      "linkTab": "matches"
+    },
+    {
+      "id": "notif_02",
+      "userId": "usr_player_001",
+      "title": "🏆 Tournament Registration Confirmed",
+      "message": "You have joined BGMI Erangel Mega Championship #324 (Slot 14). ₹50 entry fee deducted.",
+      "type": "MATCH",
+      "read": true,
+      "createdAt": "2026-10-26T06:30:00.045Z",
+      "linkTab": "matches"
+    },
+    {
+      "id": "notif_03",
+      "userId": "ALL",
+      "title": "⚡ Weekend Mega Championship Announced",
+      "message": "Join the weekend BGMI & Free Fire battles with over ₹50,000 guaranteed prize pools!",
+      "type": "ANNOUNCEMENT",
+      "read": false,
+      "createdAt": "2026-10-26T05:30:00.045Z",
+      "linkTab": "tournaments"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "anc_1",
+      "title": "🔥 BGMI 3.2 Update & Anti-Cheat Protocol",
+      "content": "All players must ensure they are on the official Play Store version. Emulators and iPad graphics modifiers are automatically flagged.",
+      "tag": "HOT",
+      "date": "Today"
+    },
+    {
+      "id": "anc_2",
+      "title": "⚡ Instant UPI Withdrawals Live",
+      "content": "Withdrawals are now processed within 15-30 minutes directly into your verified UPI ID with zero gateway deduction fee.",
+      "tag": "UPDATE",
+      "date": "Yesterday"
+    }
+  ],
+  "settings": {
+    "minDepositPaise": 1000,
+    "maxDepositPaise": 200000,
+    "depositPresets": [
+      {
+        "id": "pre_10",
+        "amountRupees": 10,
+        "label": "₹10 (Starter)",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "pre_20",
+        "amountRupees": 20,
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "pre_50",
+        "amountRupees": 50,
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "pre_100",
+        "amountRupees": 100,
+        "label": "₹100 (Popular)",
+        "enabled": true,
+        "order": 4
+      },
+      {
+        "id": "pre_200",
+        "amountRupees": 200,
+        "enabled": true,
+        "order": 5
+      },
+      {
+        "id": "pre_300",
+        "amountRupees": 300,
+        "enabled": true,
+        "order": 6
+      },
+      {
+        "id": "pre_500",
+        "amountRupees": 500,
+        "label": "₹500 (Best Value)",
+        "enabled": true,
+        "order": 7
+      },
+      {
+        "id": "pre_1000",
+        "amountRupees": 1000,
+        "enabled": true,
+        "order": 8
+      },
+      {
+        "id": "pre_1500",
+        "amountRupees": 1500,
+        "enabled": true,
+        "order": 9
+      },
+      {
+        "id": "pre_2000",
+        "amountRupees": 2000,
+        "label": "₹2,000 (Max)",
+        "enabled": true,
+        "order": 10
+      }
+    ],
+    "minWithdrawalPaise": 10000,
+    "maxWithdrawalPaise": 1000000,
+    "merchantUpiId": "battleesports.tournaments@icici",
+    "merchantName": "BATTLE ESPORTS TOURNAMENTS LTD",
+    "gatewayEnabled": true,
+    "supportPhone": "+919999988888",
+    "supportEmail": "help@battleesports.com",
+    "announcementNotice": "🚀 BGMI Season 32 Pro League registration is now LIVE! 100% Guaranteed Prize Pool directly credited to wallet.",
+    "merchantQrImageUrl": "data:image/png;base64,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",
+    "upiConfigured": true
+  },
+  "auditLogs": [
+    {
+      "id": "aud_768bdfe3",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "SEND_TOURNAMENT_START_ALERT",
+      "details": "Sent match starting soon notification for Apex Masters Invitational #3631 to 1 registered player(s)",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-11-02T11:05:51.656Z"
+    },
+    {
+      "id": "aud_99af0104",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_61c3d8c6 changed from PROCESSING to SUCCESSFUL Ref: IMPS_PUSH_551651 Notes: IMPS transfer confirmed",
+      "targetId": "wth_61c3d8c6",
+      "timestamp": "2026-11-02T11:05:51.653Z"
+    },
+    {
+      "id": "aud_26c51ecc",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_61c3d8c6 changed from PENDING to PROCESSING Notes: Bank queue verified",
+      "targetId": "wth_61c3d8c6",
+      "timestamp": "2026-11-02T11:05:51.648Z"
+    },
+    {
+      "id": "aud_9b7b872b",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_ROOM_DETAILS",
+      "details": "Updated room credentials for Apex Masters Invitational #3631 (Room ID: ROOM_PUSH_1636) to 1 registered players",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-11-02T11:05:51.639Z"
+    },
+    {
+      "id": "aud_d5f17fd4",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "SEND_TOURNAMENT_START_ALERT",
+      "details": "Sent match starting soon notification for Apex Masters Invitational #3631 to 1 registered player(s)",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-11-02T11:05:36.306Z"
+    },
+    {
+      "id": "aud_92dcf84e",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_ROOM_DETAILS",
+      "details": "Updated room credentials for Apex Masters Invitational #3631 (Room ID: ROOM_PUSH_6294) to 1 registered players",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-11-02T11:05:36.298Z"
+    },
+    {
+      "id": "log_6616eddb",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "fake_test_account_1@gamer.com",
+      "targetUsername": "fake_test_account_1@gamer.com",
+      "details": "Failed authentication attempt (attempt #2) from IP 127.0.0.1.",
+      "timestamp": "2026-10-29T11:23:38.278Z"
+    },
+    {
+      "id": "log_dbccf06d",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "bruteforce_test_1793273004622@test.com",
+      "targetUsername": "bruteforce_test_1793273004622@test.com",
+      "details": "Failed authentication attempt (attempt #5) from IP 192.168.100.99.",
+      "timestamp": "2026-10-29T11:23:24.658Z"
+    },
+    {
+      "id": "log_24cf0ebc",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "bruteforce_test_1793273004622@test.com",
+      "targetUsername": "bruteforce_test_1793273004622@test.com",
+      "details": "Failed authentication attempt (attempt #4) from IP 192.168.100.99.",
+      "timestamp": "2026-10-29T11:23:24.651Z"
+    },
+    {
+      "id": "log_09620307",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "bruteforce_test_1793273004622@test.com",
+      "targetUsername": "bruteforce_test_1793273004622@test.com",
+      "details": "Failed authentication attempt (attempt #3) from IP 192.168.100.99.",
+      "timestamp": "2026-10-29T11:23:24.645Z"
+    },
+    {
+      "id": "log_697e89fd",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "bruteforce_test_1793273004622@test.com",
+      "targetUsername": "bruteforce_test_1793273004622@test.com",
+      "details": "Failed authentication attempt (attempt #2) from IP 192.168.100.99.",
+      "timestamp": "2026-10-29T11:23:24.633Z"
+    },
+    {
+      "id": "log_e77dff1d",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "bruteforce_test_1793273004622@test.com",
+      "targetUsername": "bruteforce_test_1793273004622@test.com",
+      "details": "Failed authentication attempt (attempt #1) from IP 192.168.100.99.",
+      "timestamp": "2026-10-29T11:23:24.625Z"
+    },
+    {
+      "id": "log_f7f1456f",
+      "adminId": "system",
+      "adminName": "Security Gate",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "targetId": "fake_test_account_1@gamer.com",
+      "targetUsername": "fake_test_account_1@gamer.com",
+      "details": "Failed authentication attempt (attempt #1) from IP 127.0.0.1.",
+      "timestamp": "2026-10-29T11:23:24.600Z"
+    },
+    {
+      "id": "aud_4fca9852",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_ROOM_DETAILS",
+      "details": "Updated room credentials for Apex Masters Invitational #3631 (Room ID: ROOM_99182) to 1 registered players",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-10-29T07:47:33.699Z"
+    },
+    {
+      "id": "aud_baaaa458",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "RELEASE_ROOM_DETAILS",
+      "details": "Published room credentials for Apex Masters Invitational #3631 (Room ID: ROOM_99182) to 1 registered players",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-10-29T07:47:33.684Z"
+    },
+    {
+      "id": "aud_ed745d09",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "SAVE_DRAFT_ROOM_DETAILS",
+      "details": "Saved draft room credentials for Apex Masters Invitational #3631 (Room ID: ROOM_99182) without publishing",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-10-29T07:47:33.678Z"
+    },
+    {
+      "id": "aud_572492a8",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "CREATE_TOURNAMENT",
+      "details": "Created tournament: Apex Masters Invitational #3631",
+      "targetId": "tour_16d37823",
+      "timestamp": "2026-10-29T07:47:33.637Z"
+    },
+    {
+      "id": "aud_a9d1e18a",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UNBAN_USER",
+      "details": "Unbanned user RahulPro (usr_player_001). Reason: Approved upon formal appeal and apology",
+      "targetId": "usr_player_001",
+      "targetUsername": "RahulPro",
+      "reason": "Approved upon formal appeal and apology",
+      "previousStatus": "PERMANENTLY_BANNED",
+      "newStatus": "ACTIVE",
+      "timestamp": "2026-10-28T14:21:42.645Z"
+    },
+    {
+      "id": "aud_0c5b3b48",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "BAN_USER",
+      "details": "Banned user RahulPro (usr_player_001). Status: PERMANENTLY_BANNED. Reason: Repeated severe fair play violations",
+      "targetId": "usr_player_001",
+      "targetUsername": "RahulPro",
+      "reason": "Repeated severe fair play violations",
+      "previousStatus": "ACTIVE",
+      "newStatus": "PERMANENTLY_BANNED",
+      "banType": "PERMANENT",
+      "timestamp": "2026-10-28T14:21:42.641Z"
+    },
+    {
+      "id": "aud_e88c0cc4",
+      "adminId": "system",
+      "adminName": "System (Auto-Expiry)",
+      "action": "AUTO_UNBAN_EXPIRED",
+      "details": "Temporary suspension expired. Access automatically restored for user RahulPro (usr_player_001)",
+      "targetId": "usr_player_001",
+      "targetUsername": "RahulPro",
+      "previousStatus": "TEMPORARILY_BANNED",
+      "newStatus": "ACTIVE",
+      "timestamp": "2026-10-28T14:21:42.635Z"
+    },
+    {
+      "id": "aud_93a09158",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "BAN_USER",
+      "details": "Banned user RahulPro (usr_player_001). Status: TEMPORARILY_BANNED. Reason: Quick temporary ban for auto-expiry test (Expires: 2026-10-28T14:21:41.890Z)",
+      "targetId": "usr_player_001",
+      "targetUsername": "RahulPro",
+      "reason": "Quick temporary ban for auto-expiry test",
+      "previousStatus": "TEMPORARILY_BANNED",
+      "newStatus": "TEMPORARILY_BANNED",
+      "banType": "TEMPORARY",
+      "banExpiresAt": "2026-10-28T14:21:41.890Z",
+      "timestamp": "2026-10-28T14:21:41.530Z"
+    },
+    {
+      "id": "aud_fff5e87c",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "BAN_USER",
+      "details": "Banned user RahulPro (usr_player_001). Status: TEMPORARILY_BANNED. Reason: Cheating in Tournament #324 (Expires: 2026-10-29T14:21:41.458Z)",
+      "targetId": "usr_player_001",
+      "targetUsername": "RahulPro",
+      "reason": "Cheating in Tournament #324",
+      "previousStatus": "ACTIVE",
+      "newStatus": "TEMPORARILY_BANNED",
+      "banType": "TEMPORARY",
+      "banExpiresAt": "2026-10-29T14:21:41.458Z",
+      "timestamp": "2026-10-28T14:21:41.459Z"
+    },
+    {
+      "id": "aud_a80bbcfe",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: battleesports.tournaments@icici [Auto QR generated: true]",
+      "timestamp": "2026-10-27T10:30:18.249Z"
+    },
+    {
+      "id": "aud_e49a95dc",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: battleesports.tournaments@icici [Auto QR generated: true]",
+      "timestamp": "2026-10-27T10:30:18.217Z"
+    },
+    {
+      "id": "aud_e65f2e9f",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: battleesports.tournaments@icici [Auto QR generated: true]",
+      "timestamp": "2026-10-27T10:13:42.807Z"
+    },
+    {
+      "id": "aud_36874f17",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: None [Auto QR generated: false]",
+      "timestamp": "2026-10-27T10:13:42.748Z"
+    },
+    {
+      "id": "aud_54d7401a",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "REGENERATE_QR",
+      "details": "Regenerated official merchant UPI QR for battle.tournaments@icici",
+      "timestamp": "2026-10-27T10:13:31.117Z"
+    },
+    {
+      "id": "aud_2e4a2d0b",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: battle.tournaments@icici [Auto QR generated: true]",
+      "timestamp": "2026-10-27T10:13:31.080Z"
+    },
+    {
+      "id": "aud_672c6a30",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_cb4c31b7 changed from PENDING to REJECTED Notes: Invalid UPI VPA - beneficiary name mismatch",
+      "targetId": "wth_cb4c31b7",
+      "timestamp": "2026-10-26T16:17:19.735Z"
+    },
+    {
+      "id": "aud_dd12e0c6",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_09c2052c changed from PROCESSING to SUCCESSFUL Ref: UTR_ICICI_9381029410 Notes: Paid successfully via corporate payout API",
+      "targetId": "wth_09c2052c",
+      "timestamp": "2026-10-26T16:17:19.619Z"
+    },
+    {
+      "id": "aud_608dfd28",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_09c2052c changed from PENDING to PROCESSING Notes: Queued with ICICI Payout Gateway",
+      "targetId": "wth_09c2052c",
+      "timestamp": "2026-10-26T16:17:19.572Z"
+    },
+    {
+      "id": "aud_c4e665ef",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: esports.payouts@axisbank (QR image updated)",
+      "timestamp": "2026-10-26T16:17:19.432Z"
+    },
+    {
+      "id": "aud_3065ff43",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_p01 changed from PROCESSING to SUCCESSFUL Ref: UTR_ICICI_9381029410 Notes: Paid successfully via corporate payout API",
+      "targetId": "wth_p01",
+      "timestamp": "2026-10-26T16:16:40.650Z"
+    },
+    {
+      "id": "aud_3fc4a818",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_WITHDRAWAL_STATUS",
+      "details": "Withdrawal wth_p01 changed from PENDING to PROCESSING Notes: Queued with ICICI Payout Gateway",
+      "targetId": "wth_p01",
+      "timestamp": "2026-10-26T16:16:40.603Z"
+    },
+    {
+      "id": "aud_f73018a8",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: esports.payouts@axisbank (QR image updated)",
+      "timestamp": "2026-10-26T16:16:40.511Z"
+    },
+    {
+      "id": "aud_3acaf715",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "UPDATE_SETTINGS",
+      "details": "Updated settings. Merchant UPI: esports.payouts@axisbank (QR image updated)",
+      "timestamp": "2026-10-26T16:15:52.122Z"
+    },
+    {
+      "id": "aud_01",
+      "adminId": "usr_admin_001",
+      "adminName": "BattleAdmin",
+      "action": "RELEASE_ROOM_DETAILS",
+      "details": "Released room credentials for tour_bgmi_erangel_01 (Room 8392014)",
+      "targetId": "tour_bgmi_erangel_01",
+      "timestamp": "2026-10-26T08:25:00.045Z"
+    }
+  ]
+}

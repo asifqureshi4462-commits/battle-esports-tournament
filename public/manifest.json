@@ -1,0 +1,17 @@
+{
+  "short_name": "Battle Esports",
+  "name": "BATTLE ESPORTS TOURNAMENT",
+  "description": "Premier competitive esports tournament platform for BGMI, Free Fire, and COD Mobile.",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/7.x/bottts/svg?seed=BattleEsports",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#08090d",
+  "theme_color": "#0a0b12",
+  "display": "standalone",
+  "orientation": "portrait"
+}

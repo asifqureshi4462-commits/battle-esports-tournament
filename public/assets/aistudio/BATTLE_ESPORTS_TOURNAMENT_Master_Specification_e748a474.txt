@@ -1,0 +1,322 @@
+BATTLE ESPORTS TOURNAMENT COMPLETE APP BUILD SPECIFICATION & MASTER
+IMPLEMENTATION PROMPT
+
+PURPOSE Build a complete, secure, maintainable esports tournament app
+named BATTLE ESPORTS TOURNAMENT. Use this file as the product
+requirements and implementation prompt in Google AI Studio. Inspect the
+existing project first if one is provided. Preserve working features
+unless a change is explicitly required. Do not deliver only a mockup:
+implement real flows where credentials and services are available, test
+them, and clearly identify anything that requires external setup.
+
+IMPORTANT DELIVERY RULES - Do not claim a feature works unless it is
+implemented and tested. - Do not invent API keys, credentials, payment
+confirmations, APK files, or test results. - Do not fix
+authentication/database permission errors by making the database
+publicly readable or writable. - Keep secrets and privileged operations
+on the server, never in client code. - If a required service,
+credential, or Android build environment is unavailable, implement what
+is possible and give exact next steps. - Use clear loading, empty,
+success, and error states throughout. - Build mobile-first, responsive
+screens with a polished dark esports visual style. - App name: BATTLE
+ESPORTS TOURNAMENT. - Keep code modular, maintainable, and documented.
+
+1.  USER APP NAVIGATION / SECTIONS Create a clear bottom navigation or
+    equivalent mobile navigation with:
+2.  Home
+3.  Tournaments
+4.  My Matches
+5.  Wallet
+6.  Profile Also provide Notifications and Customer Support access.
+
+HOME DASHBOARD - App logo/name and notification indicator. - User
+greeting and profile shortcut. - Wallet balance and coin balance,
+sourced from backend. - Featured/upcoming tournaments. - Live
+tournaments and recently completed tournaments. - Announcements and
+important notices. - Quick actions: Browse Tournaments, My Matches, Add
+Cash, Withdraw, Support. - Never show hardcoded balances or fake
+tournament data in production.
+
+TOURNAMENTS SECTION - Tabs/filters: All, Upcoming, Live, Completed, My
+Joined. - Search and filter by game, mode, entry fee, date, and
+status. - Tournament cards show game/title, banner, match date/time with
+timezone, entry fee, prize pool, mode, map, slots filled/total, and
+status. - Tournament details screen includes description, rules,
+eligibility, registration deadline, schedule, entry fee, prize
+distribution, participant limit, and support contact. - Join tournament
+confirmation dialog shows the exact fee and rules. - Validate
+eligibility, available wallet funds, registration window, participant
+limit, and duplicate registration on the backend. - Deduct entry fee
+only through an atomic backend transaction; if registration fails, do
+not charge or safely refund. - Show registration result and a unique
+registration record. - Prevent duplicate joins even if the user taps
+repeatedly or has network retries. - Clearly show room ID/password only
+to authorized registered participants and only when the admin releases
+them. - Show match result and prize information after admin publication.
+
+MY MATCHES - Tabs: Upcoming, Live, Completed, Cancelled. - Show joined
+tournaments, registration status, match time, rules, room details when
+authorized, and result. - Notify users when schedule, room details, or
+results change. - Do not expose private match credentials to
+nonparticipants.
+
+WALLET SECTION - Show available balance, reserved/pending amount if
+applicable, and transaction history. - Transaction types: Deposit, Entry
+Fee, Prize, Refund, Withdrawal, Adjustment. - Each transaction shows ID,
+amount, status, date/time, and description. - Wallet balance must be
+computed/updated by trusted backend operations, never by trusting
+client-submitted balances. - Maintain an auditable ledger. Prevent
+duplicate credits/deductions and negative balances unless explicitly
+allowed by documented rules. - Never erase historical transactions when
+status changes.
+
+ADD CASH / DEPOSIT - User enters or selects amount; validate allowed
+minimum/maximum values on the backend. - Create a unique deposit/order
+ID on the backend. - Use an eligible payment gateway/merchant service
+that supports the chosen UPI flow and server-side payment
+verification. - Display a provider-generated payment page/QR for the
+exact order amount where supported. - Verify actual payment through
+authenticated provider API and/or cryptographically verified webhooks. -
+Match verified payment to user, order ID, amount, currency, merchant,
+and provider transaction reference. - Credit wallet exactly once only
+after confirmed payment success. - Handle pending, failed, expired,
+cancelled, and duplicate webhook cases. - A screenshot, user-entered
+UTR, or “I Have Paid” button is not proof of payment. - If no payment
+provider credentials are configured, show a clearly marked
+configuration-required state; never fake successful deposits. - Admin
+may review deposits, but manual approval must not be represented as
+independent bank/payment verification unless it truly was verified.
+
+DEPOSIT STATUS MANAGEMENT Use consistent canonical statuses such as
+pending, verification_pending, successful, failed, rejected, expired. If
+the product needs only three admin tabs, map the canonical statuses
+consistently to Pending, Successful, and Rejected while retaining
+accurate underlying payment state. - Pending list shows only records
+matching the configured pending/review states. - Successful list shows
+only successful records. - Rejected list shows only rejected records. -
+On status change, update the database record using its unique ID and
+await confirmation before moving it in the UI. - Refresh/reopen must not
+put a successful/rejected request back in Pending. - Avoid duplicate
+records and duplicate wallet credits. - Show useful failure details if
+the database write fails; do not hide a record locally as if saved. -
+Use real-time listeners correctly if already supported.
+
+WITHDRAWALS - User can securely add/edit their own payout UPI ID or
+supported payout details. - Validate payout details and withdrawal
+amount on the server. - Display available balance and minimum/maximum
+withdrawal rules. - Create a unique withdrawal request ID. - Statuses:
+Pending, Processing, Successful, Rejected. - Admin view must show user
+ID/username, amount, payout destination as permitted, request ID, and
+timestamps. - Reserve/deduct funds according to a clearly documented
+transactional policy. - On rejection, release/refund reserved funds
+exactly once. - Mark a withdrawal Successful only when it has actually
+been paid or a permitted, clearly documented manual payout has been
+confirmed. - Prevent duplicate withdrawals and duplicate refunds. -
+Display the latest status to the user and preserve withdrawal history.
+
+PROFILE & ACCOUNT SETTINGS - User profile, username, avatar, email/phone
+where applicable, and account details. - Change password and Forgot
+Password using verified email/phone and the existing authentication
+provider. - Secure logout and session handling. - Users may update only
+fields they are authorized to edit. - Preserve wallet, matches,
+transactions, and history when changing a password. - Never store
+passwords in plain text.
+
+NOTIFICATIONS - In-app notifications for successful/failed deposit
+verification, withdrawal status, tournament join, schedule changes, room
+details availability, match results, prizes, and admin announcements. -
+Notifications must be tied to authenticated users and must not expose
+another user’s data. - Avoid sending duplicate notifications for the
+same event.
+
+CUSTOMER CARE / SUPPORT - User can submit a support ticket with
+category, subject, message, optional safe attachment if supported, and
+creation time. - User can view their own tickets and replies. - Admin
+can view and reply to tickets, assign status (Open, In Progress,
+Resolved), and see user/request IDs. - Validate inputs and restrict
+users to their own tickets.
+
+2.  ADMIN PANEL Create a protected administrator dashboard with:
+
+-   Overview: total users, active/upcoming/live tournaments, pending
+    deposits, pending withdrawals, support tickets, and ledger summaries
+    derived from real database data.
+-   User Management: search users, view account status and safe profile
+    fields, suspend/reactivate if supported, inspect transaction history
+    with proper permissions.
+-   Tournament Management: create/edit/publish/cancel/complete
+    tournaments, set banner/title/game/mode/map/date/time/timezone/entry
+    fee/prize pool/slots/rules, manage participants, release room
+    details, publish results, and cancel/refund according to policy.
+-   Deposit Management: Pending, Successful, Rejected; filters, search,
+    request detail, verification status, provider transaction reference,
+    timestamps, and audit trail.
+-   Withdrawal Management: Pending, Processing, Successful, Rejected;
+    display exact requested amount and payout details needed for
+    authorized processing.
+-   Wallet/Ledger: read-only audit view by default; any admin adjustment
+    must require permission, reason, and immutable audit record.
+-   Customer Care: list tickets, reply, update status.
+-   Notifications/Announcements: publish announcements and supported
+    notifications.
+-   Settings: app rules, supported games, entry fee limits, withdrawal
+    limits, support contact, payment-provider configuration status, and
+    app branding where appropriate.
+-   Admin Account: Change Password and Forgot Password.
+-   Admin actions must be authorized by the backend and recorded in an
+    audit log.
+-   Do not expose payment secrets, passwords, authentication tokens, or
+    unnecessary personal data in the dashboard.
+-   Do not alter the existing Admin Panel visual design unnecessarily if
+    modifying an existing app.
+
+3.  AUTHENTICATION & AUTHORIZATION
+
+-   Inspect the existing stack and reuse its established authentication
+    provider where possible.
+-   Implement email/password registration/login and verified password
+    recovery.
+-   Add Google Sign-In only if the provider configuration is complete.
+-   Handle missing/expired tokens by refreshing or reauthenticating
+    correctly.
+-   Secure protected API calls with authenticated sessions.
+-   Keep admin role assignment server-controlled. Never accept a
+    client-provided role as authority.
+-   Do not create a hidden default admin password or backdoor.
+-   Avoid account enumeration in password reset responses.
+-   Add rate limits and safe error messages.
+-   Never log passwords, tokens, OTPs, or payment secrets.
+
+4.  DATABASE / BACKEND DESIGN Create appropriate
+    entities/tables/collections, adapting to the existing project:
+
+-   users
+-   user_profiles
+-   admin_roles or equivalent secure role claims
+-   tournaments
+-   tournament_registrations
+-   matches/results
+-   wallet_accounts or balances
+-   wallet_transactions / ledger_entries
+-   deposits/payment_orders
+-   withdrawals
+-   support_tickets
+-   support_messages
+-   notifications
+-   app_settings
+-   audit_logs
+
+Requirements: - Use unique IDs, foreign-key/relationship constraints
+where supported, indexes, and timestamps. - Store money as integer minor
+units (e.g., paise) or a safe decimal type, never binary floating-point
+for financial calculations. - Use database transactions/atomic
+operations for wallet and registration operations. - Add idempotency
+keys for deposits, webhook events, tournament joins, withdrawals, and
+wallet credits. - Use least-privilege security rules and server-side
+validation. - Provide safe migrations or schema changes; preserve
+existing user data. - Do not overwrite or delete existing data without
+explicit migration and backup strategy. - If using Firebase, inspect
+Firebase Authentication, Firestore/Realtime Database rules, Cloud
+Functions/backend, and required indexes. Fix permission errors at the
+correct layer; do not disable security rules. - If using another stack,
+follow its secure equivalent. - Never put service account credentials or
+private server secrets in the client bundle or APK.
+
+5.  SECURITY & PAYMENT SAFETY
+
+-   Treat all client input as untrusted.
+-   Validate user identity, permissions, amounts, statuses, and
+    ownership on the server.
+-   Verify payment webhooks using the provider’s documented signature
+    verification.
+-   Never trust a client-only “success” status.
+-   Never credit a wallet based solely on screenshots or a typed
+    transaction reference.
+-   Ensure each verified provider payment is credited at most once.
+-   Separate provider payment status from admin review status if needed.
+-   Add audit logs for sensitive actions.
+-   Do not claim compliance or production readiness without actual
+    review and testing.
+-   Real-money entry fees, prizes, and withdrawals may be subject to
+    local law and platform/payment-provider restrictions; make the
+    operator responsible for checking applicable requirements before
+    launch.
+
+6.  DESIGN / UX
+
+-   Premium, modern dark esports style with readable typography, clear
+    contrast, consistent spacing, and responsive mobile layouts.
+-   Use a consistent color system (dark background with restrained
+    red/orange or electric accent).
+-   Provide skeleton/loading states, empty states, confirmations, and
+    useful errors.
+-   Use accessible labels and form validation.
+-   Avoid decorative controls that do nothing.
+-   Do not show fake statistics or hardcoded success states in
+    production.
+-   Keep the app responsive and usable on common Android screen sizes.
+
+7.  APK / DEPLOYMENT
+
+-   Inspect whether the existing project is a web app, hybrid app, or
+    native Android app before choosing the build method.
+-   For a compatible web app, consider Capacitor or another suitable
+    Android wrapper; for a native app, use the existing Android build
+    system.
+-   Set app display name to BATTLE ESPORTS TOURNAMENT and configure
+    package/application ID, icon, splash screen, and required
+    permissions.
+-   Configure backend environment variables and authorized domains
+    correctly.
+-   Do not include server secrets in the APK.
+-   Build and test a debug APK if the environment supports it.
+-   Explain release signing and secure key backup.
+-   If this environment cannot generate an APK, provide the complete
+    source project and exact commands to build it on a computer. Do not
+    pretend a build artifact exists.
+
+8.  TESTING & ACCEPTANCE CHECKLIST Implement and run suitable
+    automated/manual tests for:
+
+-   Registration, login, logout, expired sessions, Forgot Password,
+    Change Password.
+-   User cannot access admin routes or data.
+-   Admin-only actions are blocked for ordinary users.
+-   Tournament creation, join, full tournament, duplicate join,
+    cancellation/refund, and results.
+-   Deposit order amount matching, payment success/failure, invalid
+    signature, expired order, duplicate webhook, and exactly-once wallet
+    credit.
+-   Pending → Successful: saved status moves the record out of Pending
+    and into Successful; refresh/reopen preserves it.
+-   Pending → Rejected: saved status moves it out of Pending and into
+    Rejected.
+-   Database write failure shows an error and does not falsely report
+    success.
+-   Withdrawal requests, duplicate clicks, rejection/refund, and
+    accurate history.
+-   Support ticket ownership and admin reply permissions.
+-   Wallet balance/ledger consistency and concurrency.
+-   Android build, install, launch, and basic navigation if build tools
+    are available.
+
+9.  IMPLEMENTATION ORDER
+10. Inspect project files, current stack, authentication, database, and
+    existing features.
+11. Summarize the planned architecture and any required external setup.
+12. Implement authentication and database security first.
+13. Implement tournament flows and transactional wallet ledger.
+14. Implement payment-provider integration and withdrawal flow only with
+    supported real services.
+15. Implement Admin Panel status filtering and persistence.
+16. Implement support, notifications, and settings.
+17. Run tests, fix errors, and build the Android package if possible.
+18. Provide a concise delivery report listing implemented features, test
+    results, setup still required, and exact location of generated
+    files.
+
+FINAL INSTRUCTION Start by inspecting the current project. If no project
+files are available, create a new project structure and tell me which
+files you create. Work in small, verifiable stages. Do not stop after
+writing a plan. Do not claim everything is error-free; report what was
+actually tested and any remaining setup needed.

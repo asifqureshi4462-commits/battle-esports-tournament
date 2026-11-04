@@ -1,0 +1,8 @@
+{
+  "name": "Remix BATTLE ESPORTS TOURNAMENT",
+  "description": "Premier competitive esports tournament platform for BGMI, Free Fire, COD Mobile, and Valorant with secure wallet ledger, live match brackets, room credentials, and admin operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

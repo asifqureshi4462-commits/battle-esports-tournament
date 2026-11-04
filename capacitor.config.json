@@ -1,0 +1,9 @@
+{
+  "appId": "com.battleesports.tournament",
+  "appName": "BATTLE ESPORTS TOURNAMENT",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
