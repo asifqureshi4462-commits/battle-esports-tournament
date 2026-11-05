@@ -26,18 +26,12 @@ export function setStoredToken(token: string | null) {
   }
 }
 
-const API_BASE_URL = (() => {
-  if (typeof window !== 'undefined') {
-    const isCapacitor = 
-      window.location.protocol === 'capacitor:' || 
-      window.location.protocol === 'file:' || 
-      (window.location.hostname === 'localhost' && window.location.port !== '3000');
-    if (isCapacitor) {
-      return 'https://ais-dev-4heebrrpbklgtchjhefzbs-703329501501.asia-southeast1.run.app';
-    }
-  }
-  return '';
-})();
+// Backend URL.
+// - Web (same server serves site + API): leave VITE_API_BASE_URL empty -> relative URLs.
+// - Android APK: VITE_API_BASE_URL MUST be set at build time to your hosted backend,
+//   e.g. https://your-backend.onrender.com  (no trailing slash).
+const RAW_API_BASE_URL: string = ((import.meta as any).env?.VITE_API_BASE_URL as string | undefined) || '';
+const API_BASE_URL = RAW_API_BASE_URL.trim().replace(/\/+$/, '');
 
 async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = getStoredToken();
