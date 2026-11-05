@@ -58,7 +58,17 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
     throw new Error('Network connection error. Please check your internet connection or server status.');
   }
 
-  const data = await res.json().catch(() => ({}));
+  // No backend (e.g. testing without a server): the response is not JSON.
+  // Throw a clear error instead of returning an empty object that would crash screens.
+  let data: any;
+  try {
+    data = await res.json();
+  } catch {
+    if (res.ok) {
+      throw new Error('Backend server is not connected (testing mode).');
+    }
+    data = {};
+  }
 
   if (!res.ok) {
     console.warn(`[API Error Response] ${res.status} ${fullUrl}:`, data);

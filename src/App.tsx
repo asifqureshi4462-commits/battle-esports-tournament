@@ -50,7 +50,7 @@ function MainApp() {
         <h2 className="text-base font-bold font-heading tracking-wider">BATTLE ESPORTS TOURNAMENT</h2>
         <p className="text-xs text-zinc-400 mt-1 flex items-center gap-1.5">
           <RefreshCw className="w-3.5 h-3.5 animate-spin text-rose-500" />
-          Connecting to Arena Server...
+          Loading Arena...
         </p>
       </div>
     );

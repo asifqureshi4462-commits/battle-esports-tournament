@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { UserProfile, UserNotificationSettings, InAppPushAlert } from '../types/index.ts';
-import { api, getStoredToken, setStoredToken } from '../services/api.ts';
+import { api, setStoredToken } from '../services/api.ts';
 import {
   triggerBrowserNotification,
   registerServiceWorker,
@@ -16,6 +16,60 @@ export interface BannedAccountInfo {
   expiresAt?: string | null;
 }
 
+// ---------------------------------------------------------------------------
+// TEMPORARY FRONTEND-ONLY LOGIN (testing mode)
+// No backend, no Firebase, no internet needed. Any non-empty username/email and
+// password is accepted. The session is kept in localStorage.
+// To go back to real authentication later, restore the api.login()/api.getMe()
+// calls in this file.
+// ---------------------------------------------------------------------------
+const LOCAL_SESSION_KEY = 'battle_esports_local_session';
+
+function readLocalSession(): UserProfile | null {
+  try {
+    const raw = localStorage.getItem(LOCAL_SESSION_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed.username === 'string' ? (parsed as UserProfile) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveLocalSession(user: UserProfile) {
+  try {
+    localStorage.setItem(LOCAL_SESSION_KEY, JSON.stringify(user));
+  } catch {
+    // storage unavailable - session simply will not persist
+  }
+}
+
+function clearLocalSession() {
+  try {
+    localStorage.removeItem(LOCAL_SESSION_KEY);
+  } catch {
+    // ignore
+  }
+}
+
+function buildLocalUser(identifier: string, role: 'user' | 'admin' = 'user'): UserProfile {
+  const id = identifier.trim();
+  const isEmail = id.includes('@');
+  const username = isEmail ? id.split('@')[0] || id : id;
+  return {
+    id: 'local_' + username.toLowerCase().replace(/[^a-z0-9]/g, '_'),
+    username,
+    email: isEmail ? id : `${username}@local.test`,
+    phone: '',
+    role,
+    avatar: '',
+    walletBalancePaise: 0,
+    coins: 0,
+    accountStatus: 'ACTIVE' as any,
+    createdAt: new Date().toISOString(),
+  };
+}
+
 interface AuthContextType {
   user: UserProfile | null;
   token: string | null;
@@ -23,8 +77,6 @@ interface AuthContextType {
   bannedInfo: BannedAccountInfo | null;
   setBannedInfo: (info: BannedAccountInfo | null) => void;
   login: (email: string, pass: string, expectedRole?: 'admin' | 'user') => Promise<void>;
-  register: (data: any) => Promise<void>;
-  googleLogin: (email: string, name?: string) => Promise<void>;
   logout: () => Promise<void>;
   refreshUser: () => Promise<void>;
   quickSwitchUser: (email: string, pass: string) => Promise<void>;
@@ -52,7 +104,8 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserProfile | null>(null);
-  const [token, setToken] = useState<string | null>(getStoredToken());
+  // Token stays null in local testing mode (no backend session).
+  const [token, setToken] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [bannedInfo, setBannedInfo] = useState<BannedAccountInfo | null>(null);
   const [activeTab, setActiveTab] = useState<'home' | 'tournaments' | 'matches' | 'wallet' | 'profile' | 'admin'>('home');
@@ -77,24 +130,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const refreshUser = useCallback(async () => {
-    try {
-      const res = await api.getMe();
-      setUser(res.user);
-      setNotificationSettings(res.user.notificationSettings || null);
-      setBannedInfo(null);
-    } catch (err: any) {
-      if (err.code === 'ACCOUNT_BANNED' || err.status === 403) {
-        setBannedInfo({
-          isBanned: true,
-          status: err.banInfo?.status,
-          reason: err.banInfo?.reason || err.message,
-          banType: err.banInfo?.banType,
-          expiresAt: err.banInfo?.expiresAt,
-        });
-      }
-      setUser(null);
-      setStoredToken(null);
-      setToken(null);
+    const saved = readLocalSession();
+    if (saved) {
+      setUser(saved);
+      setNotificationSettings(saved.notificationSettings || null);
     }
   }, []);
 
@@ -191,42 +230,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, [token, user, notificationSettings]);
 
   useEffect(() => {
-    async function init() {
-      setIsLoading(true);
-      const existingToken = getStoredToken();
-      if (existingToken) {
-        try {
-          const res = await api.getMe();
-          setUser(res.user);
-          setNotificationSettings(res.user.notificationSettings || null);
-          setToken(existingToken);
-          setBannedInfo(null);
-          if (res.user.role === 'admin') {
-            setActiveTab('admin');
-          } else {
-            setActiveTab('home');
-          }
-        } catch (err: any) {
-          if (err.code === 'ACCOUNT_BANNED' || err.status === 403) {
-            setBannedInfo({
-              isBanned: true,
-              status: err.banInfo?.status,
-              reason: err.banInfo?.reason || err.message,
-              banType: err.banInfo?.banType,
-              expiresAt: err.banInfo?.expiresAt,
-            });
-          }
-          setStoredToken(null);
-          setToken(null);
-          setUser(null);
-        }
-      } else {
-        setUser(null);
-        setToken(null);
-      }
-      setIsLoading(false);
+    // Restore the temporary login session after refresh (no network call).
+    const saved = readLocalSession();
+    if (saved) {
+      setUser(saved);
+      setNotificationSettings(saved.notificationSettings || null);
+      setActiveTab(saved.role === 'admin' ? 'admin' : 'home');
     }
-    init();
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
@@ -237,97 +248,35 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }, [user, token, fetchUnreadNotifs]);
 
-  const login = async (identifier: string, pass: string, expectedRole?: 'admin' | 'user') => {
-    setIsLoading(true);
-    try {
-      const res = await api.login({ email: identifier, password: pass, expectedRole });
-      setUser(res.user);
-      setNotificationSettings(res.user.notificationSettings || null);
-      setToken(res.token);
-      setBannedInfo(null);
-      if (res.user.role === 'admin') {
-        setActiveTab('admin');
-      } else {
-        setActiveTab('home');
-      }
-      await fetchUnreadNotifs();
-    } catch (err: any) {
-      if (err.code === 'ACCOUNT_BANNED' || err.status === 403) {
-        setBannedInfo({
-          isBanned: true,
-          status: err.banInfo?.status,
-          reason: err.banInfo?.reason || err.message,
-          banType: err.banInfo?.banType,
-          expiresAt: err.banInfo?.expiresAt,
-        });
-      }
-      throw err;
-    } finally {
-      setIsLoading(false);
-    }
+  const startLocalSession = (identifier: string, role: 'user' | 'admin') => {
+    const localUser = buildLocalUser(identifier, role);
+    saveLocalSession(localUser);
+    setUser(localUser);
+    setNotificationSettings(null);
+    setBannedInfo(null);
+    setActiveTab(role === 'admin' ? 'admin' : 'home');
   };
 
-  const register = async (data: any) => {
-    setIsLoading(true);
-    try {
-      const res = await api.register(data);
-      setUser(res.user);
-      setNotificationSettings(res.user.notificationSettings || null);
-      setToken(res.token);
-      setActiveTab('home');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const googleLogin = async (email: string, name?: string) => {
-    setIsLoading(true);
-    try {
-      const res = await api.googleLogin({ email, name });
-      setUser(res.user);
-      setNotificationSettings(res.user.notificationSettings || null);
-      setToken(res.token);
-      setActiveTab('home');
-    } finally {
-      setIsLoading(false);
-    }
+  const login = async (identifier: string, pass: string, _expectedRole?: 'admin' | 'user') => {
+    if (!identifier.trim()) throw new Error('Please enter your username or email');
+    if (!pass) throw new Error('Please enter your password');
+    startLocalSession(identifier, 'user');
   };
 
   const logout = async () => {
-    setIsLoading(true);
-    try {
-      await api.logout();
-    } catch {
-      // ignore
-    } finally {
-      setUser(null);
-      setStoredToken(null);
-      setToken(null);
-      setBannedInfo(null);
-      setNotificationSettings(null);
-      setActivePushAlert(null);
-      setActiveTab('home');
-      setIsLoading(false);
-    }
+    clearLocalSession();
+    setStoredToken(null);
+    setUser(null);
+    setToken(null);
+    setBannedInfo(null);
+    setNotificationSettings(null);
+    setActivePushAlert(null);
+    setActiveTab('home');
   };
 
-  const quickSwitchUser = async (email: string, pass: string) => {
-    setIsLoading(true);
-    try {
-      const res = await api.login({ email, password: pass });
-      setUser(res.user);
-      setNotificationSettings(res.user.notificationSettings || null);
-      setToken(res.token);
-      setBannedInfo(null);
-      if (res.user.role === 'admin') {
-        setActiveTab('admin');
-      } else {
-        setActiveTab('home');
-      }
-      await fetchUnreadNotifs();
-    } finally {
-      setIsLoading(false);
-    }
+  // Used by the Profile screen "quick switch" test buttons.
+  const quickSwitchUser = async (email: string, _pass: string) => {
+    startLocalSession(email, email.toLowerCase().startsWith('admin') ? 'admin' : 'user');
   };
 
   return (
@@ -339,8 +288,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bannedInfo,
         setBannedInfo,
         login,
-        register,
-        googleLogin,
         logout,
         refreshUser,
         quickSwitchUser,
