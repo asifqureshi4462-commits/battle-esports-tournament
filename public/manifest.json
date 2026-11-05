@@ -4,9 +4,9 @@
   "description": "Premier competitive esports tournament platform for BGMI, Free Fire, and COD Mobile.",
   "icons": [
     {
-      "src": "https://api.dicebear.com/7.x/bottts/svg?seed=BattleEsports",
-      "type": "image/svg+xml",
-      "sizes": "192x192 512x512"
+      "src": "/assets/aistudio/file_000000002f448211a4cad723873e084a_76d4f186.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",

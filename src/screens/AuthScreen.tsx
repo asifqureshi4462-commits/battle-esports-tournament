@@ -138,9 +138,13 @@ export const AuthScreen: React.FC = () => {
       <div className="w-full max-w-md bg-[#0e1017] border border-zinc-800 rounded-3xl shadow-2xl overflow-hidden relative z-10 flex flex-col animate-fade-in">
         {/* Header Branding Banner */}
         <div className="p-6 bg-gradient-to-b from-rose-950/40 via-zinc-900/60 to-[#0e1017] border-b border-zinc-800/80 text-center relative">
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-600 to-amber-500 p-0.5 mx-auto mb-3 shadow-lg shadow-rose-950/60 flex items-center justify-center">
-            <div className="w-full h-full bg-[#0e1017] rounded-[14px] flex items-center justify-center">
-              <Trophy className="w-7 h-7 text-amber-400" />
+          <div className="w-16 h-16 rounded-2xl overflow-hidden p-0.5 mx-auto mb-3 shadow-xl shadow-rose-950/80 border border-rose-500/40 bg-gradient-to-tr from-rose-600 to-amber-500">
+            <div className="w-full h-full rounded-[14px] overflow-hidden bg-[#0e1017]">
+              <img
+                src="/assets/aistudio/file_000000002f448211a4cad723873e084a_76d4f186.png"
+                alt="Battle Esports Logo"
+                className="w-full h-full object-cover scale-125 hover:scale-135 transition-transform"
+              />
             </div>
           </div>
 

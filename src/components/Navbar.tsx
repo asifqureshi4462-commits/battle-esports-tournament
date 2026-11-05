@@ -25,8 +25,12 @@ export const Navbar: React.FC = () => {
             onClick={() => setActiveTab(user?.role === 'admin' ? 'admin' : 'home')}
             className="flex items-center gap-2 cursor-pointer select-none group"
           >
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-rose-600 via-red-600 to-amber-600 flex items-center justify-center font-display text-2xl font-bold text-white shadow-lg shadow-rose-900/30 border border-rose-500/30 group-hover:scale-105 transition-transform">
-              B
+            <div className="w-9 h-9 rounded-xl overflow-hidden shadow-lg shadow-rose-950/50 border border-rose-500/40 group-hover:scale-110 transition-transform">
+              <img
+                src="/assets/aistudio/file_000000002f448211a4cad723873e084a_76d4f186.png"
+                alt="Logo"
+                className="w-full h-full object-cover scale-125"
+              />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5 leading-none">
