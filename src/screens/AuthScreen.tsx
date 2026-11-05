@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 
 export const AuthScreen: React.FC = () => {
-  const { login, register, googleLogin } = useAuth();
+  const { login, register } = useAuth();
 
   // Unified authentication screen: Log In (users & admins) or Sign Up
   const [authMode, setAuthMode] = useState<'login' | 'signup'>('login');
@@ -120,7 +120,9 @@ export const AuthScreen: React.FC = () => {
     setGoogleLoading(true);
     setLoginError(null);
     try {
-      await googleLogin('rahultripathi5649@gmail.com', 'Rahul Tripathi');
+      // Real Google OAuth is not configured yet. The old code logged everyone into a
+      // hardcoded email account, which is a security hole, so it was removed.
+      throw new Error('Google sign-in is not available yet. Please use email and password.');
     } catch (err: any) {
       setLoginError(err.message || 'Google sign-in failed');
     } finally {

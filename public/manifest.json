@@ -4,9 +4,16 @@
   "description": "Premier competitive esports tournament platform for BGMI, Free Fire, and COD Mobile.",
   "icons": [
     {
-      "src": "/assets/aistudio/file_000000002f448211a4cad723873e084a_76d4f186.png",
+      "src": "/icon-192.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": "/",
